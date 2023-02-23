@@ -821,6 +821,10 @@
                                     <span>Friends</span>
                                     <span>432</span>
                                 </li>
+                                <li>
+                                    <span>School</span>
+                                    <span>432</span>
+                                </li>
                             </ul>
                             <button class="btn btn-primary btn-lg waves-effect btn-block">FOLLOW</button>
                         </div>
@@ -962,7 +966,7 @@
                                             <div class="panel-body">
                                                 <div class="post">
                                                     <div class="post-heading">
-                                                        <p>This is the music video that I'm addicted to recently. It's called Kelly Time by Owl City from the movie Castaway whom Tom Hanks played the Main Character.</p>
+                                                        <p>This is the song that I'm addicted to recently. It's called Kelly Time by Owl City from the movie Castaway, in which Tom Hanks played the main character.</p>
                                                     </div>
                                                     <div class="post-content">
                                                         <iframe width="100%" height="360" src="https://www.youtube.com/embed/QVFNyYqGZyk" title="Owl City - Kelly Time (Full Released Song) Lyrics [Full HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
