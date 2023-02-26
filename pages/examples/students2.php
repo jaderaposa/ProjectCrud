@@ -849,7 +849,7 @@
                                             <td><?php echo $row['school']; ?></td>
                                             <td><?php echo $row['address']; ?></td>
                                             <td>
-                                                <a class='btn btn-primary' href='view.php?id=$row[id]'>View</a>
+                                                <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
                                                 <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
                                                 <a class='btn btn-danger' href='delete.php?id=<?php echo $row['id']; ?>'>Delete</a>
                                             </td>
@@ -866,73 +866,7 @@
                 </div>
             </div>
             <!-- #END# Basic Examples -->
-            <!-- Exportable Table -->
-            <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                    <div class="card">
-                        <div class="header">
-                            <h2>
-                                EXPORTABLE TABLE
-                            </h2>
-                            <ul class="header-dropdown m-r--5">
-                                <li class="dropdown">
-                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                                        <i class="material-icons">more_vert</i>
-                                    </a>
-                                    <ul class="dropdown-menu pull-right">
-                                        <li><a href="javascript:void(0);">Action</a></li>
-                                        <li><a href="javascript:void(0);">Another action</a></li>
-                                        <li><a href="javascript:void(0);">Something else here</a></li>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="body">
-                            <table class="table table-bordered table-striped table-hover dataTable js-exportable">                               
-                                    <thead>
-                                        <tr>
-                                            <th>ID #</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Last Name</th>
-                                            <th>Birth Date</th>
-                                            <th>School</th>
-                                            <th>Address</th>
-                                        </tr>
-                                    </thead>                         
-                                    <tbody>
-                                    <?php
-                                
-                                    include "connect2.php";                           
-                                    $query = "SELECT * FROM students";                                   
-                                    $result = $conn -> query($query);                                    
-                                    while($row = $result -> fetch_assoc()){
-                                    $id = $row['id'];
-                                    
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $row['id']; ?></td>
-                                            <td><?php echo $row['firstname']; ?></td>
-                                            <td><?php echo $row['middlename']; ?></td>
-                                            <td><?php echo $row['lastname']; ?></td>
-                                            <td><?php echo $row['birthdate']; ?></td>
-                                            <td><?php echo $row['school']; ?></td>
-                                            <td><?php echo $row['address']; ?></td>                                           
-                                        </tr>
-                                        <?php
-                                        
-                                        }
-                                        ?>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- #END# Exportable Table -->
-            
+
         </div>
     </section>
 
