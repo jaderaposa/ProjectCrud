@@ -1004,7 +1004,7 @@
                                     <label for="lastname">Birth Date</label>
                                     <div class="form-group">
                                         <div class="form-line" id="bs_datepicker_container">
-                                            <input type="date" id="birthdate" name="birthdate" value="<?php echo $row['birthdate']; ?>" class="form-control" placeholder="MM/DD/YYYY"/>
+                                            <input type="text" id="birthdate" name="birthdate" value="<?php echo $row['birthdate']; ?>" class="form-control" placeholder="MM/DD/YYYY"/>
                                         </div>
                                     </div>
                                     <label for="sex">Sex</label>

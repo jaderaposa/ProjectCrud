@@ -921,46 +921,46 @@
                                                     <h2 class="card-inside-title">Student View Details</h2>
                                                     <br>
                                                     <br>                                                   
-                                                    <label for="firstname">First name</label>
+                                                    <label for="fullname"><u>Full Name</u></label>
                                                     <div class="form-group">                                                          
                                                         <p class="form-control">
-                                                            <?=$student['firstname'];?>
+                                                            <b><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></b>
                                                         </p>
                                                     </div>
-                                                    <label for="middlename">Middle name</label>
+                                                    <!-- <label for="middlename"><u>Middle name</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
                                                             <?=$student['middlename'];?>
                                                         </p>
                                                     </div>
-                                                    <label for="lastname">Last name</label>
+                                                    <label for="lastname"><u>Last name</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
                                                             <?=$student['lastname'];?>
                                                         </p>                                                            
-                                                    </div>
-                                                    <label for="lastname">Birth Date</label>
+                                                    </div> -->
+                                                    <label for="lastname"><u>Birth Date</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
-                                                            <?=$student['birthdate'];?>
+                                                            Was born in <b><?=$student['birthdate'];?></b>
                                                         </p>                                                            
                                                     </div>
-                                                    <label for="sex">Sex</label>
+                                                    <label for="sex"><u>Sex</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
-                                                            <?=$student['sex'];?>
+                                                            <b><?=$student['sex'];?></b>
                                                         </p>                                                            
                                                     </div>
-                                                    <label for="school">School</label>
+                                                    <label for="school"><u>School</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
-                                                            <?=$student['school'];?>
+                                                            Studying in <b><?=$student['school'];?></b>
                                                         </p>                                                            
                                                     </div>
-                                                    <label for="address">Address</label>
+                                                    <label for="address"><u>Address</u></label>
                                                     <div class="form-group">
                                                         <p class="form-control">
-                                                            <?=$student['address'];?>
+                                                            Lives in <b><?=$student['address'];?></b>
                                                         </p>                                                            
                                                     </div>
                                                     </form>
