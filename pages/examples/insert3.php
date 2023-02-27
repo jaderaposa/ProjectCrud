@@ -7,10 +7,11 @@
         $middlename = $_GET['middlename'];
         $lastname = $_GET['lastname'];
         $birthdate = $_GET['birthdate'];
+        $sex = $_GET['sex'];
         $school = $_GET['school'];
         $address = $_GET['address'];
 
-        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$school', '$address')";
+        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, sex, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$sex', '$school', '$address')";
 
 
         if ($conn -> query ($query) === TRUE){

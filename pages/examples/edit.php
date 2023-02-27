@@ -983,19 +983,19 @@
                                 <div>
                                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>" class="form-control"> <br>
 
-                                    <label for="firstname">First name</label>
+                                    <label for="firstname">First Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text" class="form-control" value="<?php echo $row['firstname']; ?>" placeholder="" name="firstname">
                                         </div>
                                     </div>
-                                    <label for="middlename">Middle name</label>
+                                    <label for="middlename">Middle Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text"  class="form-control" value="<?php echo $row['middlename']; ?>" placeholder="" name="middlename">
                                         </div>
                                     </div>
-                                    <label for="lastname">Last name</label>
+                                    <label for="lastname">Last Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text" class="form-control" value="<?php echo $row['lastname']; ?>" placeholder="" name="lastname">
@@ -1004,7 +1004,13 @@
                                     <label for="lastname">Birth Date</label>
                                     <div class="form-group">
                                         <div class="form-line" id="bs_datepicker_container">
-                                            <input type="text" id="birthdate" name="birthdate" value="<?php echo $row['birthdate']; ?>" class="form-control" placeholder="" />
+                                            <input type="date" id="birthdate" name="birthdate" value="<?php echo $row['birthdate']; ?>" class="form-control" placeholder="MM/DD/YYYY"/>
+                                        </div>
+                                    </div>
+                                    <label for="sex">Sex</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" class="form-control" value="<?php echo $row['sex']; ?>" placeholder="Male or Female" name="sex">
                                         </div>
                                     </div>
                                     <label for="school">School</label>

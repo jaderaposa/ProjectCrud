@@ -913,76 +913,69 @@
                             {
                                 $student = mysqli_fetch_array($query_run);
                                 ?>
-                                <!-- <form method="POST" action="update.php"> -->
                                     <div class="row clearfix">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="card">
                                                 
                                                 <div class="body">
-                                                    <h2 class="card-inside-title">Student Form</h2>
-                                                    <br>                                                   
-                                                    <div>
+                                                    <h2 class="card-inside-title">Student View Details</h2>
                                                     <br>
-
-                                                        <label for="firstname">First name</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line">
-                                                            <p class="form-control">
-                                                                <?=$student['firstname'];?>
-                                                            </p>
-                                                            </div>
-                                                        </div>
-                                                        <label for="middlename">Middle name</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line">
-                                                            <p class="form-control">
-                                                                <?=$student['middlename'];?>
-                                                            </p>
-                                                            </div>
-                                                        </div>
-                                                        <label for="lastname">Last name</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line">
-                                                            <p class="form-control">
-                                                                <?=$student['lastname'];?>
-                                                            </p>                                                            </div>
-                                                        </div>
-                                                        <label for="lastname">Birth Date</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line" id="bs_datepicker_container">
-                                                            <p class="form-control">
-                                                                <?=$student['birthdate'];?>
-                                                            </p>                                                            </div>
-                                                        </div>
-                                                        <label for="school">School</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line">
-                                                            <p class="form-control">
-                                                                <?=$student['school'];?>
-                                                            </p>                                                            </div>
-                                                        </div>
-                                                        <label for="address">Address</label>
-                                                        <div class="form-group">
-                                                            <div class="form-line">
-                                                            <p class="form-control">
-                                                                <?=$student['address'];?>
-                                                            </p>                                                            </div>
-                                                        </div>                                                        
-                                                        </form>
-                                                        <?php
-                                                            }
-                                                        }
-                                                        else 
-                                                        {
-                                                            echo "<h4>No Such ID Found</h4>";
-                                                        }
-                                                        ?>
+                                                    <br>                                                   
+                                                    <label for="firstname">First name</label>
+                                                    <div class="form-group">                                                          
+                                                        <p class="form-control">
+                                                            <?=$student['firstname'];?>
+                                                        </p>
                                                     </div>
+                                                    <label for="middlename">Middle name</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['middlename'];?>
+                                                        </p>
+                                                    </div>
+                                                    <label for="lastname">Last name</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['lastname'];?>
+                                                        </p>                                                            
+                                                    </div>
+                                                    <label for="lastname">Birth Date</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['birthdate'];?>
+                                                        </p>                                                            
+                                                    </div>
+                                                    <label for="sex">Sex</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['sex'];?>
+                                                        </p>                                                            
+                                                    </div>
+                                                    <label for="school">School</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['school'];?>
+                                                        </p>                                                            
+                                                    </div>
+                                                    <label for="address">Address</label>
+                                                    <div class="form-group">
+                                                        <p class="form-control">
+                                                            <?=$student['address'];?>
+                                                        </p>                                                            
+                                                    </div>
+                                                    </form>
+                                                    <?php
+                                                        }
+                                                    }
+                                                    else 
+                                                    {
+                                                        echo "<h4>No Such ID Found</h4>";
+                                                    }
+                                                    ?>
                                                 </div>                                                                                                                                                                          
                                             </div>                        
                                         </div>
                                     </div>
-                                    </form>
             </div>
     </section>
 

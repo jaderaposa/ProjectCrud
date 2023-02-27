@@ -797,7 +797,7 @@
         <div class="container-fluid">
             <div class="block-header">
                 <h2>
-                    JADE'S JQUERY DATATABLES
+                    JADE'S DATA TABLES
                     <small>Taken from <a href="https://datatables.net/" target="_blank">datatables.net</a></small>
                 </h2>
             </div>
@@ -825,6 +825,7 @@
                                             <th>Middle Name</th>
                                             <th>Last Name</th>
                                             <th>Birth Date</th>
+                                            <th>Sex</th>
                                             <th>School</th>
                                             <th>Address</th>
                                             <th>Actions</th>
@@ -846,6 +847,7 @@
                                             <td><?php echo $row['middlename']; ?></td>
                                             <td><?php echo $row['lastname']; ?></td>
                                             <td><?php echo $row['birthdate']; ?></td>
+                                            <td><?php echo $row['sex']; ?></td>
                                             <td><?php echo $row['school']; ?></td>
                                             <td><?php echo $row['address']; ?></td>
                                             <td>

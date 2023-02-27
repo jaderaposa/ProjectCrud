@@ -10,8 +10,6 @@
 
         $query = "INSERT INTO users (email, password) VALUES ('$email', '$password')";
 
-        $query = "INSERT INTO users VALUES ('', '$email', '$password')";
-
         if ($conn -> query ($query) === TRUE){
 
             echo "INSERTED SUCCESSFULLY";

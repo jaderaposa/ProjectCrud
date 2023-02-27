@@ -903,7 +903,13 @@
                                     <label for="lastname">Birth Date</label>
                                     <div class="form-group">
                                         <div class="form-line" id="bs_datepicker_container">
-                                            <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="" />
+                                            <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="MM/DD/YYYY"/>
+                                        </div>
+                                    </div>
+                                    <label for="sex">Sex</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="text" id="sex" name="sex" class="form-control" placeholder="Male or Female" />
                                         </div>
                                     </div>
                                     <label for="school">School</label>
