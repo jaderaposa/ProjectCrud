@@ -13,19 +13,19 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap Core Css -->
-    <link href="../ProjectCrud/plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="../../plugins/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Waves Effect Css -->
-    <link href="../ProjectCrud/plugins/node-waves/waves.css" rel="stylesheet" />
+    <link href="../../plugins/node-waves/waves.css" rel="stylesheet" />
 
     <!-- Animation Css -->
-    <link href="../ProjectCrud/plugins/animate-css/animate.css" rel="stylesheet" />
+    <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
     <!-- Custom Css -->
-    <link href="../ProjectCrud/css/style.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
 
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
-    <link href="../ProjectCrud/css/themes/all-themes.css" rel="stylesheet" />
+    <link href="../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
 <body class="theme-red">
@@ -272,7 +272,7 @@
             <!-- User Info -->
             <div class="user-info">
                 <div class="image">
-                    <img src="../ProjectCrud/images/jaded.jpg" width="60" height="60" alt="User" />
+                    <img src="../../images/jaded.jpg" width="60" height="60" alt="User" />
                 </div>
                 <div class="info-container">
                     <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Jade Raposa</div>
@@ -799,7 +799,7 @@
                         <div class="profile-header">&nbsp;</div>
                         <div class="profile-body">
                             <div class="image-area">
-                                <img src="../ProjectCrud/images/jaded.jpg" width="180" height="200" alt="AdminBSB - Profile Image" />
+                                <img src="../../images/jaded.jpg" width="180" height="200" alt="AdminBSB - Profile Image" />
                             </div>
                             <div class="content-area">
                                 <h3>Jade B. Raposa</h3>
@@ -896,7 +896,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="../ProjectCrud/images/jaded.jpg" width="" height="50"/>
+                                                            <img src="../../images/jaded.jpg" width="" height="50"/>
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -913,7 +913,7 @@
                                                         <p>A bracelet given to me by my partner in crime. I love you so much!</p>
                                                     </div>
                                                     <div class="post-content">
-                                                        <img src="../ProjectCrud/images/bracelet.jpg" class="img-responsive" />
+                                                        <img src="../../images/bracelet.jpg" class="img-responsive" />
                                                     </div>
                                                 </div>
                                             </div>
@@ -952,7 +952,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="../ProjectCrud/images/jaded.jpg" height="50" />
+                                                            <img src="../../images/jaded.jpg" height="50" />
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -1097,26 +1097,26 @@
     </section>
 
     <!-- Jquery Core Js -->
-    <script src="../ProjectCrud/plugins/jquery/jquery.min.js"></script>
+    <script src="../../plugins/jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core Js -->
-    <script src="../ProjectCrud/plugins/bootstrap/js/bootstrap.js"></script>
+    <script src="../../plugins/bootstrap/js/bootstrap.js"></script>
 
     <!-- Select Plugin Js -->
-    <script src="../ProjectCrud/plugins/bootstrap-select/js/bootstrap-select.js"></script>
+    <script src="../../plugins/bootstrap-select/js/bootstrap-select.js"></script>
 
     <!-- Slimscroll Plugin Js -->
-    <script src="../ProjectCrud/plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
+    <script src="../../plugins/jquery-slimscroll/jquery.slimscroll.js"></script>
 
     <!-- Waves Effect Plugin Js -->
-    <script src="../ProjectCrud/plugins/node-waves/waves.js"></script>
+    <script src="../../plugins/node-waves/waves.js"></script>
 
     <!-- Custom Js -->
-    <script src="../ProjectCrud/js/admin.js"></script>
-    <script src="../ProjectCrud/js/pages/examples/profile.js"></script>
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/pages/examples/profile.js"></script>
 
     <!-- Demo Js -->
-    <script src="../ProjectCrud/js/demo.js"></script>
+    <script src="../../js/demo.js"></script>
 </body>
 
 </html>
