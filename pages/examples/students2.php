@@ -304,7 +304,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -465,8 +465,8 @@
                                 <a href="../../pages/forms/editors.html">Editors</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="active">
+                    </li> -->
+                    <!-- <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
                             <span>Tables</span>
@@ -476,7 +476,7 @@
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
                             </li>
                             <li class="active">
-                                <a href="../../pages/tables/jquery-datatable.html">Jquery Datatables</a>
+                                <a href="../../pages/tables/jquery-datatable.html">Student Data Table</a>
                             </li>
                             <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
@@ -496,8 +496,8 @@
                                 <a href="../../pages/medias/carousel.html">Carousel</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
                             <span>Charts</span>
@@ -519,8 +519,8 @@
                                 <a href="../../pages/charts/jquery-knob.html">Jquery Knob</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <!-- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">content_copy</i>
                             <span>Example Pages</span>
@@ -532,7 +532,7 @@
                             <li>
                                 <a href="signin2.php">Sign In</a>
                             </li>
-                            <!-- <li>
+                            <li>
                                 <a href="../../pages/examples/sign-up.html">Sign Up</a>
                             </li>
                             <li>
@@ -546,7 +546,7 @@
                             </li>
                             <li>
                                 <a href="../../pages/examples/500.html">500 - Server Error</a>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -607,7 +607,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="../changelogs.html">
                             <i class="material-icons">update</i>
@@ -798,7 +798,6 @@
             <div class="block-header">
                 <h2>
                     JADE'S DATA TABLES
-                    <small>Taken from <a href="https://datatables.net/" target="_blank">datatables.net</a></small>
                 </h2>
             </div>
             <!-- Basic Examples -->

@@ -461,7 +461,7 @@
                             <li class="active">
                                 <a href="../../pages/forms/basic-form-elements.html">Basic Form Elements</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/forms/advanced-form-elements.html">Advanced Form Elements</a>
                             </li>
                             <li>
@@ -475,7 +475,7 @@
                             </li>
                             <li>
                                 <a href="../../pages/forms/editors.html">Editors</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li>
