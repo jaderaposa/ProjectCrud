@@ -530,9 +530,9 @@
                                 <a href="../../pages/examples/profile.html">Profile</a>
                             </li>
                             <li>
-                                <a href="../../pages/examples/sign-in.html">Sign In</a>
+                                <a href="signin2.php">Sign In</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/examples/sign-up.html">Sign Up</a>
                             </li>
                             <li>
@@ -546,7 +546,7 @@
                             </li>
                             <li>
                                 <a href="../../pages/examples/500.html">500 - Server Error</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
                     <li>
