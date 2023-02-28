@@ -14,7 +14,6 @@
          $_SESSION["id"] = $row["id"];
          header("Location: students2.php");
        }
-
        else{
          echo
          "<script> alert('Wrong Password'); </script>";
@@ -22,8 +21,7 @@
      }
      else{
        echo
-       "<script> alert('User Not Registered'); </script>";
-       header("Location: sign-in1.php");
+       "<script> alert('User not Registered'); </script>";
      }
    }
 ?>
