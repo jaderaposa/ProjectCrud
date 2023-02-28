@@ -36,7 +36,7 @@
         </div>
         <div class="card">
             <div class="body">
-                <form action="insert2.php">
+                <form method="POST" action="login.php" name="users">
                     <div class="msg">Sign in to start your game</div>
                     <div class="input-group">
                         <span class="input-group-addon">
@@ -60,7 +60,7 @@
                             <label for="rememberme">Please Remember Me</label>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="signin_form_get">SIGN ME IN</button>
+                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">SIGN ME IN</button>
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">
