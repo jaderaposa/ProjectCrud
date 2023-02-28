@@ -3,7 +3,7 @@
    require 'connect2.php';
 
    if(isset($_POST["submit"])){
-     $uname = $_POST["email"];
+     $uname = $_POST["username"];
      $pass = $_POST["password"];
      $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
      $row = mysqli_fetch_assoc($result);
