@@ -6798,7 +6798,7 @@ fieldset[disabled] .form-control {
   right: 6px;
   font-size: 10px;
   line-height: 15px;
-  background-color: #ff0000;
+  background-color: red;
   padding: 0 4px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
