@@ -806,18 +806,27 @@
     </section>
 
     <section class="content">
-        <div class="container-fluid">
+    <div class="container-fluid">
             <div class="block-header">
-                <h2>JADED'S STUDENT FORM</h2>
+                <h2>JADED'S STUDENT CREATE</h2>
             </div>
-            <!-- Input -->
-            <form method="GET" action="insert3.php">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-8">
+                    <div class="card">
+                        <div class="header">
+                        
+            <form method="POST" action="update.php">
                 <div class="row clearfix">
-                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                        <div class="card">
-                            
+                    <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
-                                <h2 class="card-inside-title">Student Form</h2>
+                                <h2 class="card-inside-title">
+                                    Create Student Profile
+                                </h2>
+                                <ul class="header-dropdown m-r--5">
+                                <li>
+                                <a class='btn btn-danger' href='students2.php'>Back</a>
+                                </li>
+                            </ul>
+                                <br>
                                 <br>
                                 <!-- <div class="row clearfix">
                                     <div class="col-sm-4">

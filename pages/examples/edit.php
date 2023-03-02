@@ -918,13 +918,14 @@
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
                                 <h2 class="card-inside-title">
-                                    Student Edit Info
+                                    Edit Student Profile
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                 <li>
                                 <a class='btn btn-danger' href='students2.php'>Back</a>
                                 </li>
                             </ul>
+                                <br>
                                 <br>
                                 <!-- <div class="row clearfix">
                                     <div class="col-sm-4">
