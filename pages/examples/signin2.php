@@ -1,6 +1,7 @@
 ﻿<!DOCTYPE html>
 <?php
     include "connect2.php";
+    session_start();
 ?>
 <html>
 
@@ -37,7 +38,7 @@
         <div class="card">
             <div class="body">
                 <form method="POST" action="login.php" name="users">
-                    <div class="msg">Sign in to start your game</div>
+                    <div class="msg">Sign In to Initiate Bootstrap Sequence</div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
@@ -57,19 +58,26 @@
                     <div class="row">
                         <div class="col-xs-8 p-t-5">
                             <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Please Remember Me</label>
+                            <label for="rememberme">Remember My Account</label>
                         </div>
                         <div class="col-xs-4">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">SIGN ME IN</button>
+                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">ENTER</button>
                         </div>
                     </div>
                     <div class="row m-t-15 m-b--20">
                         <div class="col-xs-6">
-                            <a href="sign-up.html">Register Me Immediately!</a>
+                            <a href="sign-up.html">No Account Yet?<br>Click Here To Register</a>
                         </div>
                         <div class="col-xs-6 align-right">
-                            <a href="forgot-password.html">Bruh, Did You Forget Your Password?</a>
+                            <a href="forgot-password.html">Forgot Your Password?</a>
                         </div>
+
+                        <?php
+                        // if(isset($_SESSION["error"])){
+                        //     $error = $_SESSION["error"];
+                        //     echo "<span>$error</span>";
+                        // }
+                        ?>  
                     </div>
                 </form>
             </div>
@@ -94,3 +102,7 @@
 </body>
 
 </html>
+
+<?php
+    // unset($_SESSION["error"]);
+?> 

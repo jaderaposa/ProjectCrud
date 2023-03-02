@@ -402,12 +402,12 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="../../index.html">
+                        <a href="students2.php">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -710,7 +710,7 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="../changelogs.html">
                             <i class="material-icons">update</i>
@@ -899,7 +899,7 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>JADED'S STUDENT FORM</h2>
+                <h2>JADED'S STUDENT VIEW</h2>
             </div>
             <!-- Input -->
             <?php
@@ -918,8 +918,14 @@
                                             <div class="card">
                                                 
                                                 <div class="body">
-                                                    <h2 class="card-inside-title">Student View Details</h2>
-                                                    <br>
+                                                    <h2 class="card-inside-title">
+                                                        Student View Details
+                                                    </h2>
+                                                    <!-- <ul class="header-dropdown m-r--5">
+                                                        <li>
+                                                        <a class='btn btn-secondary' href='studentform2.php'>Add</a>
+                                                        </li>
+                                                    </ul> -->
                                                     <br>                                                   
                                                     <label for="fullname"><u>Full Name</u></label>
                                                     <div class="form-group">                                                          
@@ -972,6 +978,7 @@
                                                         echo "<h4>No Such ID Found</h4>";
                                                     }
                                                     ?>
+                                                    <a class='btn btn-danger' href='students2.php'>Back</a>
                                                 </div>                                                                                                                                                                          
                                             </div>                        
                                         </div>

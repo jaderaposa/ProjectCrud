@@ -1,12 +1,33 @@
 <?php
+
+// session_start();
+
+// $username = $_POST["username"];
+// $error = "username/password incorrect";
+
+// if($username == "admin"){
+//     $_SESSION["username"] = $username;
+//     header("location: students2.php"); //send user to homepage, for example.
+// }else{
+//     $_SESSION["error"] = $error;
+//     header("location: signin2.php"); //send user back to the login page.
+// }
+
+?>
+
+
+
+<?php
    session_start();
    require 'connect2.php';
 
    if(isset($_POST["submit"])){
+
      $uname = $_POST["username"];
      $pass = $_POST["password"];
      $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
      $row = mysqli_fetch_assoc($result);
+     
      if(mysqli_num_rows($result) > 0){
 
        if($pass == $row['password']){

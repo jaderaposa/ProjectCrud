@@ -299,7 +299,7 @@
                 <ul class="list">
                     <li class="header">MAIN NAVIGATION</li>
                     <li>
-                        <a href="../../index.html">
+                        <a href="#">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -316,7 +316,7 @@
                             <span>Helper Classes</span>
                         </a>
                     </li>
-                    <li>
+                   -- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Widgets</span>
@@ -439,7 +439,7 @@
                                 <a href="../../pages/ui/waves.html">Waves</a>
                             </li>
                         </ul>
-                    </li>
+                    </li> <!--
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
@@ -466,24 +466,24 @@
                             </li>
                         </ul>
                     </li> -->
-                    <!-- <li class="active">
+                    <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
-                            <span>Tables</span>
+                            <span>Students</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
-                            </li>
+                            </li> -->
                             <li class="active">
-                                <a href="../../pages/tables/jquery-datatable.html">Student Data Table</a>
+                                <a href="#">Student Data Table</a>
                             </li>
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </li>
-                    <li>
+                    <!--<li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
                             <span>Medias</span>
@@ -608,12 +608,12 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li>
-                        <a href="../changelogs.html">
+                    <!-- <li>
+                        <a href="#">
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">
@@ -849,7 +849,7 @@
                                             <td><?php echo $row['sex']; ?></td>
                                             <td><?php echo $row['school']; ?></td>
                                             <td><?php echo $row['address']; ?></td>
-                                            <td>
+                                            <td class="jaded" style="display: space">
                                                 <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
                                                 <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
                                                 <a class='btn btn-danger' href='delete.php?id=<?php echo $row['id']; ?>'>Delete</a>
