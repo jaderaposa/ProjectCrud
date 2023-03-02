@@ -1033,7 +1033,7 @@
                                             <input type="text"  class="form-control" value="<?php echo $row['address']; ?>" placeholder="" name="address">
                                         </div>
                                     </div>
-                                    <button style="margin" class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">SUBMIT</button>
+                                    <button style="margin" class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Update</button>
                                     </form>
                                     <?php
 

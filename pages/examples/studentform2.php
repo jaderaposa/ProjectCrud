@@ -294,13 +294,13 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
+                            <li><a href="profile2.php"><i class="material-icons">person</i>Profile</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="signin2.php"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -316,7 +316,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -475,26 +475,26 @@
                             </li>
                             <li>
                                 <a href="../../pages/forms/editors.html">Editors</a>
-                            </li> -->
+                            </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
-                            <span>Tables</span>
+                            <span>Students</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
+                            </li> -->
+                            <li class="active">
+                                <a href="#">Student Data Table</a>
                             </li>
-                            <li>
-                                <a href="../../pages/tables/jquery-datatable.html">Jquery Datatables</a>
-                            </li>
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
-                            </li>
+                            </li> -->
                         </ul>
-                    </li>
+                    </li> <!--
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
@@ -625,7 +625,7 @@
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">
@@ -882,19 +882,19 @@
                                 </div>  -->
                                 
                                 <div>
-                                    <label for="firstname">First name</label>
+                                    <label for="firstname">First Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text" class="form-control" placeholder="" name="firstname">
                                         </div>
                                     </div>
-                                    <label for="midname">Middle name</label>
+                                    <label for="midname">Middle Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text"  class="form-control" placeholder="" name="middlename">
                                         </div>
                                     </div>
-                                    <label for="lastname">Last name</label>
+                                    <label for="lastname">Last Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
                                             <input type="text" class="form-control" placeholder="" name="lastname">
@@ -924,7 +924,7 @@
                                             <input type="text"  class="form-control" placeholder="" name="address">
                                         </div>
                                     </div>
-                                    <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">SUBMIT</button>
+                                    <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Create</button>
                                     </form>
                                 </div>
                             </div>                                                                                                                                                                          
