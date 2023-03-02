@@ -797,7 +797,7 @@
         <div class="container-fluid">
             <div class="block-header">
                 <h2>
-                    JADE'S DATA TABLES
+                    JADED'S DATA TABLES
                 </h2>
             </div>
             <!-- Basic Examples -->

@@ -286,7 +286,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="signin2.php"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
                             <span>Home</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -463,24 +463,24 @@
                                 <a href="../../pages/forms/editors.html">Editors</a>
                             </li>
                         </ul>
-                    </li>
-                    <li>
+                    </li> -->
+                    <li class="active">
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">view_list</i>
-                            <span>Tables</span>
+                            <span>Students</span>
                         </a>
                         <ul class="ml-menu">
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
+                            </li> -->
+                            <li class="active">
+                                <a href="#">Student Data Table</a>
                             </li>
-                            <li>
-                                <a href="../../pages/tables/jquery-datatable.html">Jquery Datatables</a>
-                            </li>
-                            <li>
+                            <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
-                            </li>
+                            </li> -->
                         </ul>
-                    </li>
+                    </li> <!--
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
@@ -544,7 +544,7 @@
                             </li>
                             <li>
                                 <a href="../../pages/examples/500.html">500 - Server Error</a>
-                            </li> -->
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -611,7 +611,7 @@
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">

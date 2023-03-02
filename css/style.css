@@ -2491,6 +2491,7 @@ section.content {
   border-radius: 2px;
   border: none;
   font-size: 13px;
+  margin-right: 25px;
   outline: none; }
   .btn:not(.btn-link):not(.btn-circle):hover {
     outline: none; }
@@ -2954,7 +2955,7 @@ section.content {
       color: #555; }
   .card .header {
     color: #555;
-    padding: 20px;
+    padding: 5px;
     position: relative;
     border-bottom: 1px solid rgba(204, 204, 204, 0.35); }
     .card .header .header-dropdown {
@@ -2977,8 +2978,8 @@ section.content {
           color: #000; }
     .card .header h2 {
       margin: 0;
-      font-size: 18px;
-      font-weight: normal;
+      font-size: 20px;
+      font-weight: bold;
       color: #111; }
       .card .header h2 small {
         display: block;
