@@ -14,14 +14,16 @@
         $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, sex, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$sex', '$school', '$address')";
 
 
-        if ($conn -> query ($query) === TRUE){
+        if ($conn -> query ($query) === TRUE)
+        {
 
             echo "INSERTED SUCCESSFULLY";
             echo '<script>Window.alert("INSERTED SUCCESSFULLY")</script>';
             echo "<script>Window.history.go (-1);</script>";
             header ('location: students2.php');
         }
-        else{
+        else
+        {
             
             echo "ERROR!!!";
             echo '<script>Window.alert("ERROR!!!")</script>';

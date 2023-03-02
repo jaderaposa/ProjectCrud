@@ -814,7 +814,7 @@
                     <div class="card">
                         <div class="header">
                         
-            <form method="POST" action="insert3.php">
+            <form method="GET" action="insert3.php">
                 <div class="row clearfix">
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
