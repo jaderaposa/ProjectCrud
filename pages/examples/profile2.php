@@ -286,7 +286,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="signin2.php"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="logout.php"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -474,7 +474,7 @@
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
                             </li> -->
                             <li class="active">
-                                <a href="#">Student Data Table</a>
+                                <a href="students2.php">Student Data Table</a>
                             </li>
                             <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
@@ -946,6 +946,63 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                        <div class="panel panel-default panel-post">
+                                            <div class="panel-heading">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img src="../../images/jaded.jpg" width="" height="50"/>
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            <a href="#">Jade B. Raposa</a>
+                                                        </h4>
+                                                        Shared publicly - 12 Feb 2023
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post">
+                                                    <div class="post-heading">
+                                                        <p>Let's go Halleluka!</p>
+                                                    </div>
+                                                    <div class="post-content">
+                                                    <iframe width="100%" height="560" src="https://www.youtube.com/embed/rRtZ8kNwic0" title="Luka Doncic Top Plays of the Season So Far | 2022-23 Season" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">thumb_up</i>
+                                                            <span>1M Likes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">comment</i>
+                                                            <span>124K Comments</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">share</i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-group">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" placeholder="Type a comment" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
                                         <div class="panel panel-default panel-post">
                                             <div class="panel-heading">
@@ -969,7 +1026,7 @@
                                                         <p>This is the song that I'm addicted to recently. It's called Kelly Time by Owl City from the movie Castaway, in which Tom Hanks played the main character.</p>
                                                     </div>
                                                     <div class="post-content">
-                                                        <iframe width="100%" height="360" src="https://www.youtube.com/embed/QVFNyYqGZyk" title="Owl City - Kelly Time (Full Released Song) Lyrics [Full HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                        <iframe width="100%" height="560" src="https://www.youtube.com/embed/QVFNyYqGZyk" title="Owl City - Kelly Time (Full Released Song) Lyrics [Full HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1003,6 +1060,8 @@
                                             </div>
                                         </div>
                                     </div>
+                                    
+
                                     <div role="tabpanel" class="tab-pane fade in" id="profile_settings">
                                         <form class="form-horizontal">
                                             <div class="form-group">

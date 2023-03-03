@@ -391,7 +391,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="signin2.php"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href="logout.php"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -579,7 +579,7 @@
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
                             </li> -->
                             <li class="active">
-                                <a href="#">Student Data Table</a>
+                                <a href="students2.php">Student Data Table</a>
                             </li>
                             <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>

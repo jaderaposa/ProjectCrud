@@ -2491,7 +2491,7 @@ section.content {
   border-radius: 2px;
   border: none;
   font-size: 13px;
-  margin-right: 25px;
+  margin-right: 2px;
   outline: none; }
   .btn:not(.btn-link):not(.btn-circle):hover {
     outline: none; }
@@ -2503,6 +2503,10 @@ section.content {
     position: relative;
     top: -2px;
     margin-left: 3px; }
+
+.btn:not(.btn-link):not(.btn-circle) .btn .btn-block .btn-danger {
+
+}
 
 .btn-warning,
 .btn-warning:hover,

@@ -300,7 +300,7 @@
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">favorite</i>Likes</a></li>
                             <li role="separator" class="divider"></li>
-                            <li><a href="signin2.php"><i class="material-icons">input</i>Sign Out</a></li>
+                            <li><a href=" logout.php"><i class="material-icons">input</i>Sign Out</a></li>
                         </ul>
                     </div>
                 </div>
@@ -488,7 +488,7 @@
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
                             </li> -->
                             <li class="active">
-                                <a href="#">Student Data Table</a>
+                                <a href="students2.php">Student Data Table</a>
                             </li>
                             <!-- <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
@@ -894,7 +894,7 @@
                                     <label for="firstname">First Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="" name="firstname">
+                                            <input type="text" class="form-control" placeholder="" name="firstname" required>
                                         </div>
                                     </div>
                                     <label for="midname">Middle Name</label>
@@ -906,19 +906,19 @@
                                     <label for="lastname">Last Name</label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="" name="lastname">
+                                            <input type="text" class="form-control" placeholder="" name="lastname" required>
                                         </div>
                                     </div>
                                     <label for="lastname">Birth Date</label>
                                     <div class="form-group">
                                         <div class="form-line" id="bs_datepicker_container">
-                                            <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="MM/DD/YYYY"/>
+                                            <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="MM/DD/YYYY" required>
                                         </div>
                                     </div>
                                     <label for="sex">Sex</label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" id="sex" name="sex" class="form-control" placeholder="Male or Female" />
+                                            <input type="text" id="sex" name="sex" class="form-control" placeholder="Male or Female" required>
                                         </div>
                                     </div>
                                     <label for="school">School</label>
