@@ -922,7 +922,7 @@
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                 <li>
-                                <a class='btn btn-danger' href='students2.php'>Back</a>
+                                <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
                                 </li>
                             </ul>
                                 <br>

@@ -804,13 +804,13 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
-                        <div class="header">
+                        <div class="header" style="display: inline-flex;">
                             <h2>
                                 STUDENT LIST
                             </h2>
-                            <ul class="header-dropdown m-r--5">
+                            <!-- <ul class="header-dropdown m-r--5"> -->
                                 <li>
-                                <a class='btn btn-secondary' href='studentform2.php'>Add</a>
+                                <a class='btn btn-secondary' href='studentform2.php' style="margin-left: 1295px;">Add</a>
                                 </li>
                             </ul>
                         </div>

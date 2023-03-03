@@ -2491,7 +2491,6 @@ section.content {
   border-radius: 2px;
   border: none;
   font-size: 13px;
-  margin-right: 2px;
   outline: none; }
   .btn:not(.btn-link):not(.btn-circle):hover {
     outline: none; }
@@ -2524,7 +2523,8 @@ section.content {
 .btn-info:hover,
 .btn-info:active,
 .btn-info:focus {
-  background-color: #00b0e4 !important; }
+  background-color: #00b0e4 !important;
+  margin-right: 25px; }
 
 .btn-success,
 .btn-success:hover,
