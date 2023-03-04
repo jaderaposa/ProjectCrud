@@ -2503,10 +2503,6 @@ section.content {
     top: -2px;
     margin-left: 3px; }
 
-.btn:not(.btn-link):not(.btn-circle) .btn .btn-block .btn-danger {
-
-}
-
 .btn-warning,
 .btn-warning:hover,
 .btn-warning:active,
