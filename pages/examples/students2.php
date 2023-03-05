@@ -852,36 +852,43 @@
                                             <td class="jaded" style="display: space">
                                                 <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
                                                 <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
-                                                <button type="button" class="btn btn-danger" data-target="#deleteModal" data-toggle="modal">Delete</button>
+                                                <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete</button>
                                             </td>
                                         </tr>
                                         <?php
                                         
                                         }
+
+                                            // include "modal.php";                                  
                                         ?>
+
                                         <!-- Modal -->
 
-                                        <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal fade" id="deleteModal<?php echo $row['id']?>" tabindex="-1" role="dialog">
                                             <div class="modal-dialog" role="document">
                                                 <div class="modal-content">
-                                                    <div class="modal-header" style="justify-content: space-between;">
+                                                    <div class="modal-header">
                                                         <h5 class="modal-title" id="exampleModalLabel"> Delete Student Data </h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                                             <span aria-hidden="true">&times;</span>
-                                                        </button>
+                                                        </button> -->
                                                     </div>
 
-                                                    <form action="deletecode.php" method="POST">
+                                                    <!-- <form action="/delete.php" method="GET"> -->
 
-                                                        <div class="modal-body">
-                                                            <input type="hidden" name="delete_id" id="delete_id">
-                                                            <p> Do you want to Delete this Data ?</p>                                                           
-                                                        </div>
-                                                        <div class="modal-footer">
-                                                            <button type="button" class="btn btn-secondary" data-dismiss="modal"> NO </button>
-                                                            <button type="submit" name="deletedata" class="btn btn-primary"> Yes !! Delete it. </button>
-                                                        </div>
-                                                    </form>
+                                                    <div class="modal-body">
+                                                        <!-- <input type="hidden" name="id" id="delete_id"> -->
+                                                        <h1> 
+                                                            Do you want to Delete this Data ?
+                                                        </h1>                                                           
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
+                                                        <a href='delete.php?id=<?php echo $id; ?>'>
+                                                            <button type="button" class="btn btn-primary">Yes</button>
+                                                        </a>
+                                                    </div>
+                                                    <!-- </form> -->
                                                 </div>
                                             </div>
                                         </div>

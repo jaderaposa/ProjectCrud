@@ -1,6 +1,35 @@
 <!-- Modal -->
 
-<div class="modal fade" id="deleteModal">
+<div class="modal fade" id="deleteModal<?php echo $row['id']?>" tabindex="-1" role="dialog">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel"> Delete Student Data </h5>
+				<!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button> -->
+			</div>
+
+			<!-- <form action="/delete.php" method="GET"> -->
+
+			<div class="modal-body">
+				<!-- <input type="hidden" name="id" id="delete_id"> -->
+				<h1> 
+					Do you want to Delete this Data ?
+				</h1>                                                           
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
+				<a href='delete.php?id=<?php echo $id; ?>'>
+					<button type="button" class="btn btn-primary">Yes</button>
+				</a>
+			</div>
+			<!-- </form> -->
+		</div>
+	</div>
+</div>
+
+<!-- <div class="modal fade" id="deleteModal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -18,7 +47,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
 <!-- <div id="myModal" class="modal">
 	<div class="modal-dialog">
