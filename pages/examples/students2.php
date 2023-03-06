@@ -809,9 +809,7 @@
                                 STUDENT LIST
                             </h2>
                             <!-- <ul class="header-dropdown m-r--5"> -->
-                                <li>
                                 <a class='btn btn-secondary' href='studentform2.php' >Add</a>
-                                </li>
                             </ul>
                         </div>
                             <div class="body">
