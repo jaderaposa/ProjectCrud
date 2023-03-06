@@ -8134,9 +8134,11 @@ fieldset[disabled] .form-control {
     .dataTables_wrapper input[type="search"]:focus, .dataTables_wrapper input[type="search"]:active {
       border-bottom: 2px solid #1f91f3; }
   .dataTables_wrapper .dt-buttons {
-    float: left; }
+    float: left; 
+    margin-top: 3px;
+  }
     .dataTables_wrapper .dt-buttons a.dt-button {
-      background-color: #607D8B;
+      background-color: black;
       color: #fff;
       padding: 7px 12px;
       margin-right: 5px;
@@ -8145,7 +8147,7 @@ fieldset[disabled] .form-control {
       -webkit-border-radius: 2px;
       -moz-border-radius: 2px;
       -ms-border-radius: 2px;
-      border-radius: 2px;
+      border-radius: 8px;
       border: none;
       font-size: 13px;
       outline: none; }
