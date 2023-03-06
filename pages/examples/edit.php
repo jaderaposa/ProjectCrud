@@ -958,9 +958,23 @@
                                     <label for="sex">Sex</label>
                                     <div class="form-group">
                                         <div>
-                                            <input name="sex" type="radio" id="radio_1" value="Male" <?php echo $row($sex=='Male')?'checked':'' ?> required/>
+                                            <input name="sex" type="radio" id="radio_1" value="Male" 
+                                            <?php 
+                                                if($row["sex"]=='Male')
+                                                {
+                                                    echo "checked";
+                                                }
+                                            ?>
+                                            >
                                             <label for="radio_1">Male</label>
-                                            <input name="sex" type="radio" id="radio_2" value="Female" <?php echo $row($sex=='Female')?'checked':'' ?> required/>
+                                            <input name="sex" type="radio" id="radio_2" value="Female"
+                                            <?php 
+                                                if($row["sex"]=='Female')
+                                                {
+                                                    echo "checked";
+                                                }
+                                            ?>                                         
+                                            >
                                             <label for="radio_2">Female</label>
                                         </div>
                                     </div>
