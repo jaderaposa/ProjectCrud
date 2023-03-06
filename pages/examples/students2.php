@@ -802,7 +802,7 @@
             </div>
             <!-- Basic Examples -->
             <div class="row clearfix">
-                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
                     <div class="card">
                         <div class="header" style="display: flex; justify-content:space-between;">
                             <h2>
@@ -814,113 +814,131 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="body">
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
-                                    <thead>
-                                        <tr>
-                                            <th>ID #</th>
-                                            <th>First Name</th>
-                                            <th>Middle Name</th>
-                                            <th>Last Name</th>
-                                            <th>Birth Date</th>
-                                            <th>Sex</th>
-                                            <th>School</th>
-                                            <th>Address</th>
-                                            <th>Actions</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                    <?php
-                                
-                                    include "connect2.php";                           
-                                    $query = "SELECT * FROM students";                                   
-                                    $result = $conn -> query($query);                                    
-                                    while($row = $result -> fetch_assoc()){
-                                    $id = $row['id'];
-                                    
-                                    ?>
-                                        <tr>
-                                            <td><?php echo $row['id']; ?></td>
-                                            <td><?php echo $row['firstname']; ?></td>
-                                            <td><?php echo $row['middlename']; ?></td>
-                                            <td><?php echo $row['lastname']; ?></td>
-                                            <td><?php echo $row['birthdate']; ?></td>
-                                            <td><?php echo $row['sex']; ?></td>
-                                            <td><?php echo $row['school']; ?></td>
-                                            <td><?php echo $row['address']; ?></td>
-                                            <td class="jaded" style="display: space">
-                                                <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
-                                                <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
-                                                <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete</button>
-                                            </td>
-                                        </tr>
+                            <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID #</th>
+                                                <th>First Name</th>
+                                                <th>Middle Name</th>
+                                                <th>Last Name</th>
+                                                <th>Birth Date</th>
+                                                <th>Sex</th>
+                                                <th>School</th>
+                                                <th>Address</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
                                         <?php
+                                    
+                                        include "connect2.php";                           
+                                        $query = "SELECT * FROM students";                                   
+                                        $result = $conn -> query($query);                                    
+                                        while($row = $result -> fetch_assoc()){
+                                        $id = $row['id'];
                                         
-                                        }
-
-                                            // include "modal.php";                                  
                                         ?>
-
-                                        <!-- Modal -->
-
-                                        <div class="modal fade" id="deleteModal<?php echo $row['id']?>" tabindex="-1" role="dialog">
-                                            <div class="modal-dialog" role="document">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel"> Delete Student Data </h5>
-                                                        <!-- <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button> -->
-                                                    </div>
-
-                                                    <!-- <form action="/delete.php" method="GET"> -->
-
-                                                    <div class="modal-body">
-                                                        <!-- <input type="hidden" name="id" id="delete_id"> -->
-                                                        <h1> 
-                                                            Do you want to Delete this Data ?
-                                                        </h1>                                                           
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
-                                                        <a href='delete.php?id=<?php echo $id; ?>'>
-                                                            <button type="button" class="btn btn-primary">Yes</button>
-                                                        </a>
-                                                    </div>
-                                                    <!-- </form> -->
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <!-- <div class="modal fade" id="deleteModal">
-                                            <div class="modal-dialog">
-                                                <div class="modal-content">
-                                                    <div class="modal-header">
-                                                        <h5 class="modal-title" id="exampleModalLabel">Delete Record</h5>
-                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                                            <span aria-hidden="true">&times;</span>
-                                                        </button>
-                                                    </div>
-                                                    <div class="modal-body">
-                                                        <p>Are you sure you want to delete?</p>
-                                                    </div>
-                                                    <div class="modal-footer">
-                                                        <a type="button" class="btn btn-secondary" id="close-modal">No</a>
-                                                        <a type="button" class="btn btn-danger" href='delete.php?id=<?php echo $row['id']; ?>'>Yes</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div> -->
-
-                                    </tbody>
+                                            <tr>
+                                                <td><?php echo $row['id']; ?></td>
+                                                <td><?php echo $row['firstname']; ?></td>
+                                                <td><?php echo $row['middlename']; ?></td>
+                                                <td><?php echo $row['lastname']; ?></td>
+                                                <td><?php echo $row['birthdate']; ?></td>
+                                                <td><?php echo $row['sex']; ?></td>
+                                                <td><?php echo $row['school']; ?></td>
+                                                <td><?php echo $row['address']; ?></td>
+                                                <td class="jaded" style="display: space">
+                                                    <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
+                                                    <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
+                                                    <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete</button>
+                                                </td>
+                                            <?php include "modal.php"; ?>    
+                                            </tr>
+                                        <?php                                      
+                                        }                                                                 
+                                        ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- #END# Basic Examples --> 
+            <!-- Exportable Table -->
+            <div class="row clearfix">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="card">
+                        <div class="header">
+                            <h2>
+                                EXPORTABLE TABLE
+                            </h2>
+                            <ul class="header-dropdown m-r--5">
+                                <li class="dropdown">
+                                    <a href="javascript:void(0);" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                        <i class="material-icons">more_vert</i>
+                                    </a>
+                                    <ul class="dropdown-menu pull-right">
+                                        <li><a href="javascript:void(0);">Action</a></li>
+                                        <li><a href="javascript:void(0);">Another action</a></li>
+                                        <li><a href="javascript:void(0);">Something else here</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="body">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-striped table-hover dataTable js-exportable">
+                                        <thead>
+                                            <tr>
+                                                <th>ID #</th>
+                                                <th>First Name</th>
+                                                <th>Middle Name</th>
+                                                <th>Last Name</th>
+                                                <th>Birth Date</th>
+                                                <th>Sex</th>
+                                                <th>School</th>
+                                                <th>Address</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                        <?php
+                                    
+                                        include "connect2.php";                           
+                                        $query = "SELECT * FROM students";                                   
+                                        $result = $conn -> query($query);                                    
+                                        while($row = $result -> fetch_assoc()){
+                                        $id = $row['id'];
+                                        
+                                        ?>
+                                            <tr>
+                                                <td><?php echo $row['id']; ?></td>
+                                                <td><?php echo $row['firstname']; ?></td>
+                                                <td><?php echo $row['middlename']; ?></td>
+                                                <td><?php echo $row['lastname']; ?></td>
+                                                <td><?php echo $row['birthdate']; ?></td>
+                                                <td><?php echo $row['sex']; ?></td>
+                                                <td><?php echo $row['school']; ?></td>
+                                                <td><?php echo $row['address']; ?></td>                                      
+                                            <?php include "modal.php"; ?>    
+                                            </tr>
+                                        <?php                                      
+                                        }                                                                 
+                                        ?>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
                                 </table>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- #END# Basic Examples -->
+            <!-- #END# Exportable Table -->
 
         </div>
     </section>
@@ -939,6 +957,17 @@
 
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
+
+    <!-- Jquery DataTable Plugin Js -->
+    <script src="../../plugins/jquery-datatable/jquery.dataTables.js"></script>
+    <script src="../../plugins/jquery-datatable/skin/bootstrap/js/dataTables.bootstrap.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/dataTables.buttons.min.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/buttons.flash.min.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/jszip.min.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/pdfmake.min.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/vfs_fonts.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/buttons.html5.min.js"></script>
+    <script src="../../plugins/jquery-datatable/extensions/export/buttons.print.min.js"></script>
 
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>

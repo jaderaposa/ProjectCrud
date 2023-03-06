@@ -16,17 +16,8 @@
 
         if ($conn -> query ($query) === TRUE)
         {
-
-            echo "INSERTED SUCCESSFULLY";
-            echo '<script>Window.alert("INSERTED SUCCESSFULLY")</script>';
-            echo "<script>Window.history.go (-1);</script>";
-            header ('location: students2.php');
-        }
-        else
-        {
-            
-            echo "ERROR!!!";
-            echo '<script>Window.alert("ERROR!!!")</script>';
+            echo "<script>window.alert('Student Record Successfully Added!');</script>";
+            echo "<script>window.location.assign('students2.php');</script>";
         }
     }
 ?>

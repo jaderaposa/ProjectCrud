@@ -921,73 +921,12 @@
                                     Edit Student Profile
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
-                                <li>
-                                <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
-                                </li>
-                            </ul>
+                                    <li>
+                                        <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
+                                    </li>
+                                </ul>
                                 <br>
-                                <br>
-                                <!-- <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="firstName" name="firstname" class="form-control" placeholder="First Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="middlename" name="middlename" class="form-control" placeholder="Middle Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line" id="bs_datepicker_container">
-                                                <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="Birth Date" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="school" name="school" class="form-control" placeholder="School" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="address" name="address" class="form-control" placeholder="Address" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <section class="jaded">
-                                    <div class="col-sm-2">
-                                        <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">SUBMIT</button>
-                                    </div>
-                                    </section>
-                                </div>  -->
+                                <br>           
                                 
                                 <div>
                                     <input type="hidden" name="id" value="<?php echo $row['id']; ?>" class="form-control"> <br>
@@ -1018,8 +957,11 @@
                                     </div>
                                     <label for="sex">Sex</label>
                                     <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" class="form-control" value="<?php echo $row['sex']; ?>" placeholder="Male or Female" name="sex">
+                                        <div>
+                                            <input name="sex" type="radio" id="radio_1" value="Male" <?php echo $row($sex=='Male')?'checked':'' ?> required/>
+                                            <label for="radio_1">Male</label>
+                                            <input name="sex" type="radio" id="radio_2" value="Female" <?php echo $row($sex=='Female')?'checked':'' ?> required/>
+                                            <label for="radio_2">Female</label>
                                         </div>
                                     </div>
                                     <label for="school">School</label>

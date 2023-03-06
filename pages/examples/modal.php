@@ -13,9 +13,9 @@
 			<!-- <form action="/delete.php" method="GET"> -->
 
 			<div class="modal-body">
-				<!-- <input type="hidden" name="id" id="delete_id"> -->
+				<input type="hidden" name="id"> 
 				<h1> 
-					Do you want to Delete this Data ?
+					Do you want to delete this Student Data?
 				</h1>                                                           
 			</div>
 			<div class="modal-footer">

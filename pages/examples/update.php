@@ -15,7 +15,8 @@
         $query = "UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address' WHERE id='$id'";
 
         if ($conn -> query($query) === TRUE ){
-            header ('location: students2.php');
+            echo "<script>window.alert('Student Record Successfully Updated!');</script>";
+            echo "<script>window.location.assign('students2.php');</script>";
         }
     }
 ?>

@@ -31,18 +31,19 @@
      if(mysqli_num_rows($result) > 0){
 
        if($pass == $row['password']){
-         $_SESSION["users"] = true;
-         $_SESSION["id"] = $row["id"];
-         header("Location: students2.php");
+        $_SESSION["users"] = true;
+        $_SESSION["id"] = $row["id"];
+        echo "<script>window.alert('Successfully Logged In!');</script>";
+        echo "<script>window.location.assign('students2.php');</script>";
        }
        else{
-         echo
-         "<script> alert('Wrong Password'); </script>";
+         echo "<script> alert('Wrong Password'); </script>";
+         echo "<script>window.location.assign('signin2.php');</script>";
        }
      }
      else{
-       echo
-       "<script> alert('User not Registered'); </script>";
+       echo "<script> alert('User not Registered'); </script>";
+       echo "<script>window.location.assign('signin2.php');</script>";
      }
    }
 ?>

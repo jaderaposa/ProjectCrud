@@ -917,20 +917,23 @@
                                     </div>
                                     <label for="sex">Sex</label>
                                     <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="text" id="sex" name="sex" class="form-control" placeholder="Male or Female" required>
+                                        <div>
+                                            <input name="sex" type="radio" id="radio_1" value="Male"  required/>
+                                            <label for="radio_1">Male</label>
+                                            <input name="sex" type="radio" id="radio_2" value="Female" required/>
+                                            <label for="radio_2">Female</label>
                                         </div>
                                     </div>
                                     <label for="school">School</label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text"  class="form-control" placeholder="" name="school">
+                                            <input type="text"  class="form-control" placeholder="" name="school" required>
                                         </div>
                                     </div>
                                     <label for="address">Address</label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text"  class="form-control" placeholder="" name="address">
+                                            <input type="text"  class="form-control" placeholder="" name="address" required>
                                         </div>
                                     </div>
                                     <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Create</button>
