@@ -797,7 +797,7 @@
         <div class="container-fluid">
             <div class="block-header">
                 <h2>
-                    JADED'S DATA TABLES
+                    JADED'S DATA TABLE
                 </h2>
             </div>
             <!-- Basic Examples -->
@@ -872,7 +872,7 @@
                     <div class="card">
                         <div class="header">
                             <h2>
-                                EXPORTABLE TABLE
+                                EXPORTABLE LIST
                             </h2>                   
                         </div>
                         <div class="body">
