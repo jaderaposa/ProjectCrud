@@ -2376,7 +2376,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: bold; }
+  font-weight: normal; }
 
 button,
 input,
@@ -4297,7 +4297,7 @@ section.content {
   border: none; }
   .modal .modal-content .modal-body {
     color: #777;
-    padding: 15px 25px; }
+    padding: 1px 25px; }
 
 .modal .modal-footer {
   border: none; }
