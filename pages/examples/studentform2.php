@@ -909,7 +909,7 @@
                                             <input type="text" class="form-control" placeholder="" name="lastname" required>
                                         </div>
                                     </div>
-                                    <label for="lastname">asdsad Date</label>
+                                    <label for="lastname">Birth Date</label>
                                     <div class="form-group">
                                         <div class="form-line" id="bs_datepicker_container">
                                             <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="MM/DD/YYYY" required>
