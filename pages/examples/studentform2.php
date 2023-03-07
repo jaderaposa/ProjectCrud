@@ -814,7 +814,7 @@
                     <div class="card">
                         <div class="header">
                         
-            <form method="GET" action="insert3.php">
+            <form method="GET" action="insert3.php" enctype="multipart/form-data">
                 <div class="row clearfix">
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
@@ -827,68 +827,7 @@
                                 </li>
                             </ul>
                                 <br>
-                                <br>
-                                <!-- <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="firstName" name="firstname" class="form-control" placeholder="First Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="middlename" name="middlename" class="form-control" placeholder="Middle Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="lastname" name="lastname" class="form-control" placeholder="Last Name" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line" id="bs_datepicker_container">
-                                                <input type="text" id="birthdate" name="birthdate" class="form-control" placeholder="Birth Date" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="school" name="school" class="form-control" placeholder="School" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>    
-                                <div class="row clearfix">
-                                    <div class="col-sm-4">
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="address" name="address" class="form-control" placeholder="Address" />
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row clearfix">
-                                    <section class="jaded">
-                                    <div class="col-sm-2">
-                                        <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">SUBMIT</button>
-                                    </div>
-                                    </section>
-                                </div>  -->
+                                <br>                          
                                 
                                 <div>
                                     <label for="firstname">First Name</label>
@@ -938,10 +877,9 @@
                                     </div>
                                     <label for="image">Image</label>
                                     <div class="form-group">
-                                        <div class="form-line">
-                                            <input type="file"  class="form-control" placeholder="Image" name="school" required>
-                                        </div>
+                                        <input type="file"  class="form-control" name="image" id="image">
                                     </div>
+                                    <br>                         
                                     <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Create</button>
                                     </form>
                                 </div>
@@ -953,24 +891,14 @@
             </div>
     </section>
     
-    <?php
-    /*include "connect2.php";
+    <?php 
+    // $conn = mysqli_connect("localhost", "root","");
+    // $database = myqsli_select_db($conn,'projectcrud');
 
-    if (isset($_GET['submit_form_get'])){
-         
-        $firstname = $_GET['firstname'];
-        $middlename = $_GET['middlename'];
-        $lastname = $_GET['lastname'];
-        $birthdate = $_GET['birthdate'];
-        $school = $_GET['school'];
-        $address = $_GET['address'];
+    // if (isset($_GET['']))
 
-        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$school', '$address')";
-
-        $conn->query($query) or die($connection->error);
-        echo header("Location: students2.php");
-    }*/
-?> -->
+    ?>
+    
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>

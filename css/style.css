@@ -2519,7 +2519,7 @@ section.content {
 .btn-info:hover,
 .btn-info:active,
 .btn-info:focus {
-  background-color: black !important;
+  background-color: red !important;
   margin-right: 25px; }
 
 .btn-success,
