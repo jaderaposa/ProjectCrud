@@ -3022,7 +3022,8 @@ select[multiple].input-lg {
   background-image: none;
   border: 1px solid transparent;
   border-radius: 4px;
-  color: #000;
+  color: white;
+  background-color: black;
 }
 .btn:focus,
 .btn:active:focus,
@@ -4762,8 +4763,8 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   z-index: 3;
   color: #fff;
   cursor: default;
-  background-color: #337ab7;
-  border-color: #337ab7;
+  background-color: black;
+  border-color: red;
 }
 .pagination > .disabled > span,
 .pagination > .disabled > span:hover,
