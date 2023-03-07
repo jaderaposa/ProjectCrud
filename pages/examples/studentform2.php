@@ -919,7 +919,7 @@
                                     <div class="form-group">
                                         <div>
                                             <input name="sex" type="radio" id="radio_1" value="Male"  required/>
-                                            <label for="radio_1">MMale</label>
+                                            <label for="radio_1">Male</label>
                                             <input name="sex" type="radio" id="radio_2" value="Female" required/>
                                             <label for="radio_2">Female</label>
                                         </div>
