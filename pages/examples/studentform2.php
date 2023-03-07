@@ -936,6 +936,12 @@
                                             <input type="text"  class="form-control" placeholder="" name="address" required>
                                         </div>
                                     </div>
+                                    <label for="image">Image</label>
+                                    <div class="form-group">
+                                        <div class="form-line">
+                                            <input type="file"  class="form-control" placeholder="Image" name="school" required>
+                                        </div>
+                                    </div>
                                     <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Create</button>
                                     </form>
                                 </div>
