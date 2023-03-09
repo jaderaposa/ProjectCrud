@@ -8,6 +8,9 @@
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ee7690777c.js" crossorigin="anonymous"></script>
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" type="text/css">
@@ -817,16 +820,16 @@
                                     <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                         <thead>
                                             <tr>
-                                                <th>ID #</th>
-                                                <th>First Name</th>
-                                                <th>Middle Name</th>
-                                                <th>Last Name</th>
-                                                <th>Birth Date</th>
-                                                <th>Sex</th>
-                                                <th>School</th>
-                                                <th>Address</th>
-                                                <th>Actions</th>
-                                                <th>Profile</th>                                         
+                                                <th>ID<br><i class="fa-solid fa-id-card"></i></th>
+                                                <th>First Name<br><i class="fa-solid fa-person"></i></i></th>
+                                                <th>Middle Name<br><i class="fa-solid fa-person"></i></th>
+                                                <th>Last Name<br><i class="fa-solid fa-person"></i></th>
+                                                <th>Birth Date<br><i class="fa-solid fa-cake-candles"></i></i></th>
+                                                <th>Sex<br><i class="fa-solid fa-venus-mars"></i></th>
+                                                <th>School<br><i class="fa-solid fa-school"></i></i></i></th>
+                                                <th>Address<br><i class="fa-solid fa-address-book"></i></th>
+                                                <th>Profile<br><i class="fa-solid fa-user"></i></th>
+                                                <th>Actions<br><i class="fa-solid fa-computer-mouse"></i></th>                                         
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -912,7 +915,7 @@
                                                 <td><?php echo $row['birthdate']; ?></td>
                                                 <td><?php echo $row['sex']; ?></td>
                                                 <td><?php echo $row['school']; ?></td>
-                                                <td><?php echo $row['address']; ?></td>                                      
+                                                <td><?php echo $row['address']; ?></td> 
                                             <?php include "modal.php"; ?>    
                                             </tr>
                                         <?php                                      

@@ -990,6 +990,11 @@
                                             <input type="text"  class="form-control" value="<?php echo $row['address']; ?>" placeholder="" name="address">
                                         </div>
                                     </div>
+                                    <label for="image">Image</label>
+                                    <div class="form-group">
+                                        <input type="file"  class="form-control" name="image" id="image" min="1">
+                                    </div>
+                                    <br>
                                     <button style="margin" class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Update</button>
                                     </form>
                                     <?php

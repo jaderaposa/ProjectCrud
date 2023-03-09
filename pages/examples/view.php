@@ -1,96 +1,3 @@
-<?php
-      include "connect2.php";
-      
-    /*if(isset($_POST['submit_form_get'])) {
-        $firstname = $_POST['firstname'];
-        $middlename = $_POST['middlename'];
-        $lastname = $_POST['lastname'];
-        $birthdate = $_POST['birthdate'];
-        $school = $_POST['school'];
-        $address = $_POST['address'];
-
-        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$school', '$address')";
-        $result = query($conn,$query);
-
-        if ($result) {
-            echo "Data Inserted Successfully";
-        } else {
-            echo "ERROR!!!";
-            echo '<script>Window.alert("ERROR!!!")</script>';
-        }
-    }
-
-    --------------------------------------------------------------------------------------------------
-
-    $id = "";
-    $firstname = "";
-    $middlename = "";
-    $lastname = "";
-    $birthdate = "";
-    $school = "";
-    $address = "";
-  
-    $error="";
-    $success="";
-  
-    if($_SERVER["REQUEST_METHOD"]=='GET'){
-      if(!isset($_GET['id'])){
-        header("location:c students2.php");
-        exit;
-      }
-      $id = $_GET['id'];
-      $query = "select * from students where id=$id";
-      $result = $conn->query($query);
-      $row = $result->fetch_assoc();
-      while(!$row){
-        header("location: students2.php");
-        exit;
-      }
-        $firstname = $row["firstname"];
-        $middlename = $row["middlename"];
-        $lastname = $row["lastname"];
-        $birthdate = $row["birthdate"];
-        $school = $row["school"];
-        $address = $row["address"];
-  
-    }
-    else{
-      $id = $_GET["id"];
-      $firstname=$_GET["firstname"];
-      $middlename=$_GET["middlename"];
-      $lastname=$_GET["lastname"];
-      $birthdate=$_GET["birthdate"];
-      $school=$_GET["school"];
-      $address=$_GET["address"];
-      
-  
-      $query = "update students set firstname='$firstname', middlename='$middlename, lastname='$lastname', birthdate='$birthdate', address='$address' where id='$id'";
-      $result = $conn->query($query);
-      
-    }
-
----------------------------------------------------------------------------------------------------------
-
-    $id =$_GET['user_id'];
-    if (isset($_POST['update'])) {
-
-    $firstname = $_POST['firstname'];
-    $middlename = $_POST['middlename'];
-    $lastname = $_POST['lastname'];
-    $birthdate = $_POST['birthdate'];
-    $school = $_POST['school'];
-    $address = $_POST['address'];
-
-    {		
-    mysqli_query($conn," UPDATE user SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', school='$school', address='$address' WHERE id = '$id' ")or die(mysqli_error());
-    echo "<script>alert('Successfully Updated User Info!'); window.location='user.php'</script>";
-    }
-
-
-    }*/
-  
-?>
-
 <!DOCTYPE html>
 <html>
 
@@ -903,29 +810,45 @@
             </div>
             <!-- Input -->
             <?php
-                        if(isset($_GET['id']))
-                        {
-                            $student_id = mysqli_real_escape_string($conn, $_GET['id']);
-                            $query = "SELECT * FROM students WHERE id='$student_id' ";
-                            $query_run = mysqli_query($conn, $query);
+                include "connect2.php";
+                if(isset($_GET['id']))
+                {
+                    $student_id = mysqli_real_escape_string($conn, $_GET['id']);
+                    $query = "SELECT * FROM students WHERE id='$student_id' ";
+                    $query_run = mysqli_query($conn, $query);
 
-                            if(mysqli_num_rows($query_run) > 0)
-                            {
-                                $student = mysqli_fetch_array($query_run);
-                                ?>
+                    if(mysqli_num_rows($query_run) > 0)
+                    {
+                        $student = mysqli_fetch_array($query_run);
+                        ?>
+            
                                     <div class="row clearfix">
                                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                                             <div class="card">
-                                                
+                                            <?php
+                                    
+                                            // include "connect2.php";                           
+                                            // $query = "SELECT * FROM students";                                   
+                                            // $result = $conn -> query($query);                                    
+                                            // while($row = $result -> fetch_assoc()){
+                                            // $id = $row['id'];                                    
+                                            ?> 
+                                            <div class="module-border-wrap">
                                                 <div class="body">
+                                                        <img src="../../images/<?php echo $student['image'];?>" width="180" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
+                                                    <?php   
+                                                    }       
+                                                    ?>
                                                     <h2 class="card-inside-title">
                                                         Student View Details
                                                     </h2>
+                                                    
+                                                    
                                                     <!-- <ul class="header-dropdown m-r--5">
                                                         <li>
                                                         <a class='btn btn-secondary' href='studentform2.php'>Add</a>
                                                         </li>
-                                                    </ul> -->
+                                                    </ul> -->                                                   
                                                     <br>                                                   
                                                     <label for="fullname"><u>Full Name</u></label>
                                                     <div class="form-group">                                                          
@@ -969,15 +892,18 @@
                                                             Lives in <b><?=$student['address'];?></b>
                                                         </p>                                                            
                                                     </div>
+                                                   
                                                     </form>
                                                     <?php
                                                         }
-                                                    }
+                                                    
                                                     else 
                                                     {
                                                         echo "<h4>No Such ID Found</h4>";
                                                     }
                                                     ?>
+                                                    <br>
+                                                    <br>
                                                     <a class='btn btn-danger' href='students2.php'>Back</a>
                                                 </div>                                                                                                                                                                          
                                             </div>                        
@@ -985,7 +911,20 @@
                                     </div>
             </div>
     </section>
+    <style>
+    .body {
+    background: white;
+    color: white;
+    padding: 2rem;
+}
 
+    .module-border-wrap {
+    padding: 1rem;
+    position: relative;
+    background: linear-gradient(to bottom right, black, white);
+    padding: 5px;
+    }
+    </style>
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
