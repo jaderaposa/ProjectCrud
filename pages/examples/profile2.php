@@ -799,7 +799,7 @@
                         <div class="profile-header">&nbsp;</div>
                         <div class="profile-body">
                             <div class="image-area">
-                                <img src="../../images/jaded.jpg" width="180" height="200" alt="AdminBSB - Profile Image" />
+                                <img src="../../images/jaded.jpg" width="180" height="200" alt="profile" />
                             </div>
                             <div class="content-area">
                                 <h3>Jade B. Raposa</h3>
