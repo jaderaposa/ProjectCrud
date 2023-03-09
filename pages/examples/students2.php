@@ -826,6 +826,7 @@
                                                 <th>School</th>
                                                 <th>Address</th>
                                                 <th>Actions</th>
+                                                <th>Profile</th>                                         
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -847,6 +848,9 @@
                                                 <td><?php echo $row['sex']; ?></td>
                                                 <td><?php echo $row['school']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
+                                                <td>
+                                                    <img src="../../images/<?php echo $row['image']; ?>" width="100px" height="100px">
+                                                </td>   
                                                 <td class="jaded" style="display: space">
                                                     <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
                                                     <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>

@@ -12,7 +12,7 @@
         $address = $_GET['address'];
         $image = $_GET['image'];
 
-        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, sex, school, address) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$sex', '$school', '$address')";
+        $query = "INSERT INTO students (firstname, middlename, lastname, birthdate, sex, school, address, image) VALUES ('$firstname', '$middlename', '$lastname', '$birthdate', '$sex', '$school', '$address', '$image')";
 
 
         if ($conn -> query ($query) === TRUE)

@@ -814,7 +814,7 @@
                     <div class="card">
                         <div class="header">
                         
-            <form method="GET" action="insert3.php" enctype="multipart/form-data">
+            <form method="POST" action="upload.php" enctype="multipart/form-data">
                 <div class="row clearfix">
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
