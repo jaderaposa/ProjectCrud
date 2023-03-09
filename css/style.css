@@ -2834,7 +2834,7 @@ section.content {
   -ms-border-radius: 2px;
   border-radius: 2px; }
   .card .card-inside-title {
-    margin-top: 25px;
+    margin-top: 0px;
     margin-bottom: 15px;
     display: block;
     font-weight: bold;
@@ -2955,7 +2955,7 @@ section.content {
       color: #555; }
   .card .header {
     color: #555;
-    padding: 5px;
+    padding: 15px;
     position: relative;
     border-bottom: 1px solid rgba(204, 204, 204, 0.35); }
     .card .header .header-dropdown {
