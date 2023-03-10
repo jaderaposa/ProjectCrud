@@ -35,8 +35,9 @@
             <a href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
             <small>Jade BootStrap Based - Materialization</small>
         </div>
-        <div class="card">
+        <div class="card"> 
             <div class="body">
+            <!-- <div id="blur"></div> -->
                 <form method="POST" action="login.php" name="users">
                     <div class="msg">Sign In to Initiate Bootstrap Sequence</div>
                     <div class="input-group">
@@ -59,6 +60,7 @@
                         <div class="col-xs-8 p-t-5">
                             <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
                             <label for="rememberme">Remember My Account</label>
+                        
                         </div>
                         <div class="col-xs-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">ENTER</button>
