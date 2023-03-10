@@ -828,7 +828,6 @@
                                                 <th>Sex<br><i class="fa-solid fa-venus-mars"></i></th>
                                                 <th>School<br><i class="fa-solid fa-school"></i></i></i></th>
                                                 <th>Address<br><i class="fa-solid fa-address-book"></i></th>
-                                                <th>Profile<br><i class="fa-solid fa-user"></i></th>
                                                 <th>Actions<br><i class="fa-solid fa-computer-mouse"></i></th>                                         
                                             </tr>
                                         </thead>
@@ -851,9 +850,6 @@
                                                 <td><?php echo $row['sex']; ?></td>
                                                 <td><?php echo $row['school']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
-                                                <td>
-                                                    <img src="../../images/<?php echo $row['image']; ?>" width="100px" height="100px">
-                                                </td>   
                                                 <td class="jaded" style="display: space">
                                                     <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
                                                     <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
