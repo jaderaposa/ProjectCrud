@@ -18,7 +18,7 @@
 
 
 <?php
-   session_start();
+
    require 'connect2.php';
 
    if(isset($_POST["submit"])){
@@ -31,15 +31,41 @@
      if(mysqli_num_rows($result) > 0){
 
        if($pass == $row['password']){
+        session_start();
         $_SESSION["users"] = true;
         $_SESSION["id"] = $row["id"];
-        echo "<script>window.alert('Successfully Logged In!');</script>";
-        echo "<script>window.location.assign('students2.php');</script>";
+        if (isset($_SESSION["users"])) {
+    
+          echo '<div id="dialogBox" class="dialog-box">
+                  <p>You have successfully logged in.</p>
+                </div>
+        
+                <script>
+                  
+                  setTimeout(function() {
+                    document.getElementById("dialogBox").remove();
+                  }, 3500);
+                </script>';
+        
+          unset($_SESSION['users']);
+        }
+        echo "<script>window.location.assign('signin2.php');</script>";
        }
+
        else{
-         echo "<script> alert('Wrong Password'); </script>";
+        echo 
+        '<div id="dialogBox" class="dialog-box">
+        <p>You have entered the wrong password!</p>
+        </div>
+
+        <script>
+        setTimeout(function() {
+          document.getElementById("dialogBox").remove();
+        }, 3500);
+       </script>';
          echo "<script>window.location.assign('signin2.php');</script>";
        }
+       
      }
      else{
        echo "<script> alert('User not Registered'); </script>";
@@ -48,9 +74,22 @@
    }
 ?>
 
-    
+<style>
 
-    
+    #dialogBox {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 9999;
+    }
+
+</style>
+
+       
     <!-- $server="localhost";
     $username="root";
     $password="";

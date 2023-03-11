@@ -1,4 +1,44 @@
-﻿<!DOCTYPE html>
+﻿<?php
+    session_start();
+    if (isset($_SESSION["users"])) {
+    
+    
+      
+      echo '<div id="dialogBox" class="dialog-box">
+              <p>You have successfully logged in.</p>
+            </div>
+    
+            <script>
+              
+              setTimeout(function() {
+                document.getElementById("dialogBox").remove();
+              }, 3500);
+            </script>';
+    
+      
+      
+      unset($_SESSION['users']);
+    }
+?>
+
+<style>
+
+    #dialogBox {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 9999;
+    }
+
+</style>
+
+
+
+<!DOCTYPE html>
 <html>
 
 <head>
