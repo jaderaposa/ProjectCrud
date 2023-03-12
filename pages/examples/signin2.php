@@ -8,7 +8,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Sign In | Jade BootStrap Based - Materialization</title>
+    <title>Sign In | Jade BootStrap Based Game</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -33,7 +33,7 @@
     <div class="login-box">
         <div class="logo">
             <a href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
-            <small>Jade BootStrap Based - Materialization</small>
+            <small>Jade BootStrap Based Game</small>
         </div>
         <div class="card"> 
             <div class="body">
@@ -68,7 +68,7 @@
                     </div>
                     <div class="row m-t-15 m-b--20">
                         <div class="col-xs-6">
-                            <a href="sign-up.html">No Account Yet?<br>Click Here To Register</a>
+                            <p>No Account Yet?<br>Click&nbsp;<a href="sign-up.html" style="text-decoration-line: underline;font-weight: bolder;">Here</a>&nbsp;To Register</p>
                         </div>
                         <div class="col-xs-6 align-right">
                             <a href="forgot-password.html">Forgot Your Password?</a>
