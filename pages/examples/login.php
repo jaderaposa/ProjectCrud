@@ -35,35 +35,14 @@
         $_SESSION["users"] = true;
         $_SESSION["id"] = $row["id"];
         if (isset($_SESSION["users"])) {
-    
-          echo '<div id="dialogBox" class="dialog-box">
-                  <p>You have successfully logged in.</p>
-                </div>
-        
-                <script>
-                  
-                  setTimeout(function() {
-                    document.getElementById("dialogBox").remove();
-                  }, 3500);
-                </script>';
-        
-          unset($_SESSION['users']);
+          $_SESSION["login"] = true;
         }
-        echo "<script>window.location.assign('signin2.php');</script>";
+        echo "<script>window.location.assign('students2.php');</script>";
+        exit;
        }
 
-       else{
-        echo 
-        '<div id="dialogBox" class="dialog-box">
-        <p>You have entered the wrong password!</p>
-        </div>
-
-        <script>
-        setTimeout(function() {
-          document.getElementById("dialogBox").remove();
-        }, 3500);
-       </script>';
-         echo "<script>window.location.assign('signin2.php');</script>";
+       else{ 
+        echo "<script>window.location.assign('signin2.php');</script>";
        }
        
      }
@@ -74,7 +53,7 @@
    }
 ?>
 
-<style>
+<!-- <style>
 
     #dialogBox {
         position: fixed;
@@ -87,7 +66,7 @@
         z-index: 9999;
     }
 
-</style>
+</style> -->
 
        
     <!-- $server="localhost";
