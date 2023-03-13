@@ -1,33 +1,33 @@
 <?php
     include "connect2.php";
 
-    /* WORKING */
+    // /* WORKING */
 
-    if (isset ($_POST['submit_form_get'])){
+    // if (isset ($_POST['submit_form_get'])){
          
-        $id = $_POST['id'];
-        $firstname = $_POST['firstname'];
-        $middlename = $_POST['middlename'];
-        $lastname = $_POST['lastname'];
-        $birthdate = $_POST['birthdate'];
-        $sex = $_POST['sex'];
-        $school = $_POST['school'];
-        $address = $_POST['address'];
-        $image = $_FILES['image'];
+    //     $id = $_POST['id'];
+    //     $firstname = $_POST['firstname'];
+    //     $middlename = $_POST['middlename'];
+    //     $lastname = $_POST['lastname'];
+    //     $birthdate = $_POST['birthdate'];
+    //     $sex = $_POST['sex'];
+    //     $school = $_POST['school'];
+    //     $address = $_POST['address'];
+    //     $image = $_FILES['image'];
 
-        $query = "UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$image' WHERE id='$id'";
+    //     $query = "UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$image' WHERE id='$id'";
 
        
 
-        if ($conn -> query($query) === TRUE ){
-            echo "<script>window.alert('Student Record Successfully Updated!');</script>";
-            echo "<script>window.location.assign('students2.php');</script>";
-        }
-    }
+    //     if ($conn -> query($query) === TRUE ){
+    //         echo "<script>window.alert('Student Record Successfully Updated!');</script>";
+    //         echo "<script>window.location.assign('students2.php');</script>";
+    //     }
+    // }
 
-    /* WORKING ENDS*/
+    // /* WORKING ENDS*/
 
-    
+
 
      // $database = mysqli_connect('localhost', 'root', '', 'projectcrud');
 
@@ -106,4 +106,31 @@
     //         }
     //     }
 
+
+            $id =$_POST['id'];
+            if (isset($_POST['submit_form_get'])) {
+                move_uploaded_file($_FILES["image"]["tmp_name"], $target_file) {
+                            
+       
+                            $firstname = $_POST['firstname'];
+                            $middlename = $_POST['middlename'];
+                            $lastname = $_POST['lastname'];
+                            $birthdate = $_POST['birthdate'];
+                            $sex = $_POST['sex'];
+                            $school = $_POST['school'];
+                            $address = $_POST['address'];
+                            $still_profile = $row['image'];
+
+            $result=mysqli_query($conn,"SELECT * FROM students") or die (mysqli_error());
+            $row=mysqli_num_rows($result);
+
+            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$still_profile' WHERE id = '$id' ")or die(mysqli_error());
+            echo "<script>alert('Successfully Updated Student Info!'); window.location='students2.php'</script>";	
+                            
+										
+
+            move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);			
+            $profile=$_FILES["image"]["name"];
+                                    }
+                                }
 ?>
