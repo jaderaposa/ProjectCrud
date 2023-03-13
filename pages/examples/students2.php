@@ -19,6 +19,21 @@
       
       unset($_SESSION['users']);
     }
+
+    // if (isset($_GET["submit_form_get"])) {
+
+    //     echo '<div id="dialogBox"> 
+    //         <p>Successfully Updated Student Info!</p>
+    //         </div> 
+            
+    //         <script>
+    //         setTimeout(function() {
+    //             document.getElementById("dialogBox").remove();
+    //           }, 3500);
+              
+    //           </script>
+    //         ';
+    // }
 ?>
 
 <style>

@@ -1,7 +1,5 @@
-<?php
-    include "connect2.php";
 
-    // /* WORKING */
+    <!-- // /* WORKING */
 
     // if (isset ($_POST['submit_form_get'])){
          
@@ -104,33 +102,94 @@
     //         } else {
     //             echo "Sorry, there was an error uploading your file.";
     //         }
-    //     }
+    //     } -->
+
+    <?php
+    include "connect2.php";
+
+    // // // Connect to the database
+    // // $db = new mysqli("hostname", "username", "password", "database_name");
+    
+    // // Get the file data
+    // $data = file_get_contents($_FILES['image']['tmp_name']);
+    
+    // // Prepare the query
+    // $stmt = $db->prepare("INSERT INTO images (image) VALUES (?)");
+    
+    // // Bind the data
+    // $stmt->bind_param('s', $data);
+    
+    // // Execute the query
+    // $stmt->execute();
+    
+    // // Close the connection
+    // $stmt->close();
+    // $db->close();
 
 
             $id =$_POST['id'];
             if (isset($_POST['submit_form_get'])) {
-                move_uploaded_file($_FILES["image"]["tmp_name"], $target_file) {
+                move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);
                             
        
-                            $firstname = $_POST['firstname'];
-                            $middlename = $_POST['middlename'];
-                            $lastname = $_POST['lastname'];
-                            $birthdate = $_POST['birthdate'];
-                            $sex = $_POST['sex'];
-                            $school = $_POST['school'];
-                            $address = $_POST['address'];
-                            $still_profile = $row['image'];
+                $firstname = $_POST['firstname'];
+                $middlename = $_POST['middlename'];
+                $lastname = $_POST['lastname'];
+                $birthdate = $_POST['birthdate'];
+                $sex = $_POST['sex'];
+                $school = $_POST['school'];
+                $address = $_POST['address'];
+                $filename = htmlspecialchars (basename($_FILES["image"]["name"]));
 
-            $result=mysqli_query($conn,"SELECT * FROM students") or die (mysqli_error());
+            $result=mysqli_query($conn,"SELECT * FROM students");
             $row=mysqli_num_rows($result);
 
-            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$still_profile' WHERE id = '$id' ")or die(mysqli_error());
-            echo "<script>alert('Successfully Updated Student Info!'); window.location='students2.php'</script>";	
+            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$filename' WHERE id = '$id' ")or die(mysqli_error());
+            
+            // echo '<div id="dialogBox"> 
+            // <p>Successfully Updated Student Info!</p>
+            // </div> 
+            
+            // <script>
+            // setTimeout(function() {
+            //     document.getElementById("dialogBox").remove();
+            //   }, 3500);
+              
+            //   </script>
+            // ';
+
+            echo 
+            
+            "<script>alert('Successfully Updated!'); window.location.assign('students2.php');
+            
+            
+            
+            </script>";
+            
+            
+              
+
+            
                             
 										
 
-            move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);			
-            $profile=$_FILES["image"]["name"];
-                                    }
+            // move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);			
+            // $profile=$_FILES["image"]["name"];
+                                    
                                 }
 ?>
+
+<style>
+
+    #dialogBox {
+        position: fixed;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 30px;
+        background-color: #fff;
+        border: 1px solid #ccc;
+        z-index: 9999;
+    }
+
+</style>

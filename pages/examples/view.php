@@ -832,7 +832,7 @@
                                             ?> 
                                             <div class="module-border-wrap">
                                                 <div class="body">
-                                                        <img src="../../images/<?php echo $student["image"];?>" width="220" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
+                                                        <img src="../../images/<?php echo $student['image'];?>" width="220" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
                                                     <?php   
                                                     }       
                                                     ?>
