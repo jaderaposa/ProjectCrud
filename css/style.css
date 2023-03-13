@@ -7639,31 +7639,21 @@ fieldset[disabled] .form-control {
         -webkit-transition: all 0.3s;
         transition: all 0.3s; }
       .sidebar .menu .list .menu-toggle:before {
-        content: '+';
         -moz-transform: scale(1);
         -ms-transform: scale(1);
         -o-transform: scale(1);
         -webkit-transform: scale(1);
         transform: scale(1); }
       .sidebar .menu .list .menu-toggle:after {
-        content: '\2013';
         -moz-transform: scale(0);
         -ms-transform: scale(0);
         -o-transform: scale(0);
         -webkit-transform: scale(0);
         transform: scale(0); }
       .sidebar .menu .list .menu-toggle.toggled:before {
-        -moz-transform: scale(0);
-        -ms-transform: scale(0);
-        -o-transform: scale(0);
-        -webkit-transform: scale(0);
-        transform: scale(0); }
+}
       .sidebar .menu .list .menu-toggle.toggled:after {
-        -moz-transform: scale(1);
-        -ms-transform: scale(1);
-        -o-transform: scale(1);
-        -webkit-transform: scale(1);
-        transform: scale(1); }
+}
       .sidebar .menu .list a {
         color: #747474;
         position: relative;
