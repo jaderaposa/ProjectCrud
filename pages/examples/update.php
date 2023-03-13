@@ -144,7 +144,7 @@
             $result=mysqli_query($conn,"SELECT * FROM students");
             $row=mysqli_num_rows($result);
 
-            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$filename' WHERE id = '$id' ")or die(mysqli_error());
+            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$filename' WHERE id = '$id' ");
             
             // echo '<div id="dialogBox"> 
             // <p>Successfully Updated Student Info!</p>
