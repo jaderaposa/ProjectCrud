@@ -827,15 +827,12 @@
                                             <div class="card">
                                             <?php
                                     
-                                            // include "connect2.php";                           
-                                            // $query = "SELECT * FROM students";                                   
-                                            // $result = $conn -> query($query);                                    
-                                            // while($row = $result -> fetch_assoc()){
-                                            // $id = $row['id'];                                    
+                                            // $image = $student["image"];
+
                                             ?> 
                                             <div class="module-border-wrap">
                                                 <div class="body">
-                                                        <img src="../../images/<?php echo $student['image'];?>" width="220" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
+                                                        <img src="../../images/<?php echo $student["image"];?>" width="220" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
                                                     <?php   
                                                     }       
                                                     ?>

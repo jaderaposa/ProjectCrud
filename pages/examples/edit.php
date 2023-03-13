@@ -913,7 +913,7 @@
                             $id = $row['id'];
                         ?>
                         
-            <form method="POST" action="update.php">
+            <form method="POST" action="update.php" enctype="multipart/form-data">
                 <div class="row clearfix">
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
@@ -1027,7 +1027,7 @@
         $conn->query($query) or die($connection->error);
         echo header("Location: students2.php");
     }*/
-?> -->
+?> 
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
