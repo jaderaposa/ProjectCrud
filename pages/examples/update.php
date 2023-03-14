@@ -1,29 +1,5 @@
 
-    <!-- // /* WORKING */
-
-    // if (isset ($_POST['submit_form_get'])){
-         
-    //     $id = $_POST['id'];
-    //     $firstname = $_POST['firstname'];
-    //     $middlename = $_POST['middlename'];
-    //     $lastname = $_POST['lastname'];
-    //     $birthdate = $_POST['birthdate'];
-    //     $sex = $_POST['sex'];
-    //     $school = $_POST['school'];
-    //     $address = $_POST['address'];
-    //     $image = $_FILES['image'];
-
-    //     $query = "UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$image' WHERE id='$id'";
-
-       
-
-    //     if ($conn -> query($query) === TRUE ){
-    //         echo "<script>window.alert('Student Record Successfully Updated!');</script>";
-    //         echo "<script>window.location.assign('students2.php');</script>";
-    //     }
-    // }
-
-    // /* WORKING ENDS*/
+$fname = $_GET['fname'];
 
 
 
