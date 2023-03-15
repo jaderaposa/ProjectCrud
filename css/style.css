@@ -1834,7 +1834,7 @@
   margin-bottom: 15px; }
   .block-header h2 {
     margin: 0 !important;
-    color: #666 !important;
+    color: #ffffff !important;
     font-weight: normal;
     font-size: 16px; }
     .block-header h2 small {
@@ -2368,8 +2368,9 @@ body {
   -o-transition: all 0.5s;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
-  font-family: 'Roboto', Arial, Tahoma, sans-serif; }
-
+  font-family: 'Roboto', Arial, Tahoma, sans-serif; 
+  background-color: rgb(90, 89, 89);
+}
 h1,
 h2,
 h3,
@@ -7400,7 +7401,7 @@ fieldset[disabled] .form-control {
   -moz-border-radius: 0;
   -ms-border-radius: 0;
   border-radius: 0;
-  margin-top: -35px !important;
+  margin-top: auto !important;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
   border: none; }
   .dropdown-menu .divider {
@@ -7579,7 +7580,9 @@ fieldset[disabled] .form-control {
       cursor: default;
       display: block;
       position: relative;
-      top: 25px; }
+      top: 25px; 
+      transform: translateY(-16px);
+      text-shadow: 2px 2px 2px black;}
       .sidebar .user-info .info-container .name {
         white-space: nowrap;
         -ms-text-overflow: ellipsis;
@@ -7611,7 +7614,8 @@ fieldset[disabled] .form-control {
   .sidebar .menu {
     position: relative;
     overflow-y: auto;
-    height: 90vh; }
+    height:70vh; 
+    z-index: -1;}
     .sidebar .menu .list {
       list-style: none;
       padding-left: 0; }
@@ -7621,7 +7625,9 @@ fieldset[disabled] .form-control {
         background: #eee;
         font-size: 12px;
         font-weight: 600;
-        padding: 8px 16px; }
+        padding: 8px 16px; 
+        z-index: -5;
+        position: relative;}
       .sidebar .menu .list i.material-icons {
         margin-top: 4px; }
       .sidebar .menu .list .menu-toggle:after, .sidebar .menu .list .menu-toggle:before {
@@ -7672,7 +7678,8 @@ fieldset[disabled] .form-control {
           color: #333;
           font-weight: bold;
           font-size: 14px;
-          overflow: hidden; }
+          overflow: hidden; 
+          z-index: -1;}
       .sidebar .menu .list .ml-menu {
         list-style: none;
         display: none;

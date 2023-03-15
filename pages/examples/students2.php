@@ -353,15 +353,15 @@
             </div>
             <!-- #User Info -->
             <!-- Menu -->
-            <div class="menu">
+             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="header">NAVIGATION</li>
                     <li>
-                        <a href="#">
+                        <a href="">
                             <span>Home</span>
                         </a>
-                    </li>
-                    <!-- <li>
+                    </li> <!--
+                    <li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -496,8 +496,7 @@
                                 <a href="../../pages/ui/waves.html">Waves</a>
                             </li>
                         </ul>
-                    </li> <!--
-                    <li>
+                    </li> 
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Forms</span>
@@ -526,20 +525,20 @@
                     <li class="active">
                         <a href="students2.php" class="menu-toggle">
                             <span>Student Data Table</span>
-                        </a>
-                        <!-- <ul class="ml-menu">
-                            <!-- <li>
+                        </a> <!--
+                        <ul class="ml-menu">
+                            <li>
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
-                            </li> -->
-                            <!-- <li class="active">
+                            </li> 
+                            <li class="active">
                                 <a href="#">Student Data Table</a>
-                            </li> -->
-                            <!-- <li>
+                            </li> 
+                             <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
                             </li> 
-                        </ul> -->
+                        </ul> 
                     </li>
-                    <!--<li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
                             <span>Medias</span>
@@ -552,8 +551,8 @@
                                 <a href="../../pages/medias/carousel.html">Carousel</a>
                             </li>
                         </ul>
-                    </li> -->
-                    <!-- <li>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">pie_chart</i>
                             <span>Charts</span>
@@ -575,8 +574,8 @@
                                 <a href="../../pages/charts/jquery-knob.html">Jquery Knob</a>
                             </li>
                         </ul>
-                    </li> -->
-                    <!-- <li>
+                    </li>
+                    <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">content_copy</i>
                             <span>Example Pages</span>
@@ -663,13 +662,13 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li> -->
-                    <!-- <li>
+                    </li>
+                    <li>
                         <a href="#">
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">
@@ -852,9 +851,9 @@
     <section class="content">
         <div class="container-fluid">
             <div class="block-header">
-                <h2>
+                <!-- <h2>
                     JADED'S DATA TABLE
-                </h2>
+                </h2> -->
             </div>
             <!-- Basic Examples -->
             <div class="row clearfix">
