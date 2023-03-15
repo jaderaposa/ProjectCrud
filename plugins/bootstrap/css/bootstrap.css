@@ -3244,7 +3244,7 @@ fieldset[disabled] .btn-success.focus {
   border-color: #1b6d85;
 }
 .btn-info:hover {
-  color: red;
+  color: black;
   background-color: #31b0d5;
   border-color: #269abc;
 }

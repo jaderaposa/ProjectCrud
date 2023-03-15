@@ -861,7 +861,7 @@
                     <div class="card">
                         <div class="header" style="display: flex; justify-content:space-between;padding: 15px;">
                             <h2>
-                                Student List
+                                STUDENT LIST
                             </h2>
                             <!-- <ul class="header-dropdown m-r--5"> -->
                             <section>

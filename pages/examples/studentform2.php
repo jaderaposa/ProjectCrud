@@ -816,7 +816,7 @@
                     <div class="col-lg-14 col-md-12 col-sm-10">          
                             <div class="body">
                                 <h2 class="card-inside-title">
-                                    Create Student Profile
+                                    CREATE STUDENT PROFILE
                                 </h2>
                                 <ul class="header-dropdown m-r--5">
                                 <li>
