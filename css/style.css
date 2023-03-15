@@ -246,6 +246,9 @@
 .col-indigo .navbar .nav .open > a:focus {
   background-color: rgba(0, 0, 0, 0.05); }
 
+.margintop20px {
+    margin-top: 20px;
+}
 .col-indigo .navbar .nav > li > a {
   color: #fff; }
 
@@ -2840,7 +2843,7 @@ section.content {
   .card .card-inside-title {
     margin-top: 0px;
     margin-bottom: 15px;
-    display: block;
+    display: inline-block;
     font-weight: bold;
     font-size: 20px;
     color: #000; }
@@ -2959,7 +2962,7 @@ section.content {
       color: #555; }
   .card .header {
     color: #555;
-    padding: 15px;
+    padding: 0;
     position: relative;
     border-bottom: 1px solid rgba(204, 204, 204, 0.35); }
     .card .header .header-dropdown {
@@ -2984,7 +2987,12 @@ section.content {
       margin: 0;
       font-size: 20px;
       font-weight: bold;
-      color: #111; }
+      color: white;
+      background-color: black;
+      border: 2px solid black;
+      border-radius: 20px;
+      padding: 15px;
+      justify-content: space-between;}
       .card .header h2 small {
         display: block;
         font-size: 12px;
@@ -5912,7 +5920,7 @@ fieldset[disabled] .form-control {
   color: #bbb; }
 
 .pagination li.active a {
-  background-color: #2196F3; }
+  background-color: #000000; }
 
 .pagination li {
   -webkit-border-radius: 0;

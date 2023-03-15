@@ -692,14 +692,14 @@
             </div>
             <!-- #Menu -->
             <!-- Footer -->
-            <div class="legal">
+            <!-- <div class="legal">
                 <div class="copyright">
                     &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0.5
                 </div>
-            </div>
+            </div> -->
             <!-- #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
@@ -859,12 +859,14 @@
             <div class="row clearfix">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style="padding: 0px;">
                     <div class="card">
-                        <div class="header" style="display: flex; justify-content:space-between;">
+                        <div class="header" style="display: flex; justify-content:space-between;padding: 15px;">
                             <h2>
-                                STUDENT LIST
+                                Student List
                             </h2>
                             <!-- <ul class="header-dropdown m-r--5"> -->
-                                <a class='btn btn-secondary' href='studentform2.php' >Add</a>
+                            <section>
+                            <a class='btn btn-secondary' href='studentform2.php' >Add</a>
+                            </section>
                             </ul>
                         </div>
                             <div class="body">
@@ -926,7 +928,7 @@
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div class="card">
                         <div class="header">
-                            <h2>
+                            <h2 style="display: inline-block;margin: 15px;">
                                 EXPORTABLE LIST
                             </h2>                   
                         </div>
