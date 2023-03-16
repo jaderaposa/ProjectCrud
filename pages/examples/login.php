@@ -19,38 +19,38 @@
 
 <?php
 
-   require 'connect2.php';
+  //  require 'connect2.php';
 
-   if(isset($_POST["submit"])){
+  //  if(isset($_POST["submit"])){
 
-     $uname = $_POST["username"];
-     $pass = $_POST["password"];
-     $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
-     $row = mysqli_fetch_assoc($result);
+  //    $uname = $_POST["username"];
+  //    $pass = $_POST["password"];
+  //    $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
+  //    $row = mysqli_fetch_assoc($result);
      
-     if(mysqli_num_rows($result) > 0){
+  //    if(mysqli_num_rows($result) > 0){
 
-       if($pass == $row['password']){
-        session_start();
-        $_SESSION["users"] = true;
-        $_SESSION["id"] = $row["id"];
-        if (isset($_SESSION["users"])) {
-          $_SESSION["login"] = true;
-        }
-        echo "<script>window.location.assign('students2.php');</script>";
-        exit;
-       }
+  //      if($pass == $row['password']){
+  //       session_start();
+  //       $_SESSION["users"] = true;
+  //       $_SESSION["id"] = $row["id"];
+  //       if (isset($_SESSION["users"])) {
+  //         $_SESSION["login"] = true;
+  //       }
+  //       echo "<script>window.location.assign('students2.php');</script>";
+  //       exit;
+  //      }
 
-       else{ 
-        echo "<script>window.location.assign('signin2.php');</script>";
-       }
+  //      else{ 
+  //       echo "<script>window.location.assign('signin2.php');</script>";
+  //      }
        
-     }
-     else{
-       echo "<script> alert('User not Registered'); </script>";
-       echo "<script>window.location.assign('signin2.php');</script>";
-     }
-   }
+  //    }
+  //    else{
+  //      echo "<script> alert('User not Registered'); </script>";
+  //      echo "<script>window.location.assign('signin2.php');</script>";
+  //    }
+  //  }
 ?>
 
 <!-- <style>
@@ -97,12 +97,6 @@
     } -->
 
 
-
-
-    
-
-
-
     <!-- // if (isset ($_GET['signin_form_get'])){
          
     //     $email = $_GET['email'];
@@ -128,3 +122,45 @@
     //     }
     // }
 ?> -->
+
+<?php
+  session_start();
+
+  if (isset($_SESSION['ID'])) {
+      header("Location:student_table.php");
+  }
+  // Include database connnectivity
+    
+  include ("connection.php");
+  
+  
+  if (isset($_POST['submit'])) {
+
+      $errorMsg = "";
+
+      $email    = mysqli_real_escape_string($conn, $_POST['email']);
+      $password = mysqli_real_escape_string($conn, $_POST['password']); 
+      
+  if (!empty($email) || !empty($password)) {
+        $query  = "SELECT * FROM users WHERE email = '$email'";
+        $result = mysqli_query($conn, $query);
+        if(mysqli_num_rows($result) == 1){
+          while ($row = mysqli_fetch_assoc($result)) {
+            if (password_verify($password, $row['password'])) {
+                $_SESSION['ID'] = $row['ID'];
+                $_SESSION['email'] = $row['email'];
+                echo "<script>alert('SUCCESSFULLY LOG-IN!!!.'); </script>";
+                echo "<script>window.location.assign('student_table.php')</script>" ;
+            }else{
+                $errorMsg = "Email or Password is invalid";
+            }    
+          }
+        }else{
+          $errorMsg = "No user found on this email";
+        } 
+    }else{
+      $errorMsg = "Email and Password is required";
+    }
+  }
+
+?>
