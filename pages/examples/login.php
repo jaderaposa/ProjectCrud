@@ -124,14 +124,12 @@
 ?> -->
 
 <?php
-  session_start();
 
-  if (isset($_SESSION['ID'])) {
-      header("Location:student_table.php");
+  if (isset($_SESSION['id'])) {
+      header("Location:students2.php");
   }
-  // Include database connnectivity
     
-  include ("connection.php");
+  include ("connect2.php");
   
   
   if (isset($_POST['submit'])) {
@@ -147,12 +145,16 @@
         if(mysqli_num_rows($result) == 1){
           while ($row = mysqli_fetch_assoc($result)) {
             if (password_verify($password, $row['password'])) {
-                $_SESSION['ID'] = $row['ID'];
-                $_SESSION['email'] = $row['email'];
-                echo "<script>alert('SUCCESSFULLY LOG-IN!!!.'); </script>";
-                echo "<script>window.location.assign('student_table.php')</script>" ;
+                  session_start();
+                  $_SESSION["email"] = true;
+                  $_SESSION["id"] = $row["id"];
+
+              if (isset($_SESSION["email"])) {
+                $_SESSION["login"] = true;
+                echo "<script>window.location.assign('students2.php')</script>" ;
+              }
             }else{
-                $errorMsg = "Email or Password is invalid";
+                $errorMsg = "Email or Password Is Invalid";
             }    
           }
         }else{
@@ -162,5 +164,4 @@
       $errorMsg = "Email and Password is required";
     }
   }
-
 ?>

@@ -38,16 +38,16 @@
         <div class="card"> 
             <div class="body">
             <!-- <div id="blur"></div> -->
-                <form method="POST" action="#" name="users">
+                <form method="POST" action="registration.php" name="users">
                     <div class="parent" style="text-align: center;">
                     <div class="msg">SIGN UP!</div>
                     </div>
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <i class="material-icons">person</i>
+                            <i class="material-icons">email</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Your Preferred Username" required autofocus>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Your Email" required autofocus>
                         </div>
                     </div>
                     <div class="input-group">
@@ -60,7 +60,7 @@
                     </div>
                     <div class="row" style="display: flex;margin: 0;transform: translateX(-5px);">
                         <div class="box-1">
-                            <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
+                            <button onClick="window.location.href='signin2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
                         </div>
                         <div class="box-2" style="transform: translateX(70px);">
                             <button class="btn btn-block bg-pink waves-effect" type="submit" name="register" style="width: auto;">REGISTER</button>

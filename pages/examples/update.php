@@ -1,4 +1,4 @@
-
+<!--
 $fname = $_GET['fname'];
 
 
@@ -80,10 +80,8 @@ $fname = $_GET['fname'];
     //         }
     //     } -->
 
-    <?php
-    include "connect2.php";
 
-    // // // Connect to the database
+    <!-- // // // Connect to the database
     // // $db = new mysqli("hostname", "username", "password", "database_name");
     
     // // Get the file data
@@ -100,8 +98,11 @@ $fname = $_GET['fname'];
     
     // // Close the connection
     // $stmt->close();
-    // $db->close();
+    // $db->close(); -->
 
+
+    <?php
+    include "connect2.php";
 
             $id =$_POST['id'];
             if (isset($_POST['submit_form_get'])) {

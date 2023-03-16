@@ -1,6 +1,6 @@
 ﻿<?php
     session_start();
-    if (isset($_SESSION["users"])) {
+    if (isset($_SESSION["email"])) {
     
     
       
@@ -17,7 +17,7 @@
     
       
       
-      unset($_SESSION['users']);
+      unset($_SESSION['email']);
     }
 
     // if (isset($_GET["submit_form_get"])) {

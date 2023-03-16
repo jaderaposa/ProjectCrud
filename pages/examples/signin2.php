@@ -42,10 +42,10 @@
                     <div class="msg" style="font-size: 15px;text-align: center;">Sign In to Initiate Bootstrap Sequence</div>
                     <div class="input-group">
                         <span class="input-group-addon">
-                            <i class="material-icons">person</i>
+                            <i class="material-icons">email</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" required autofocus>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required autofocus>
                         </div>
                     </div>
                     <div class="input-group">

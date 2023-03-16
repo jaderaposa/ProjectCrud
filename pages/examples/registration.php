@@ -2,9 +2,9 @@
   
   // Include database connectivity
       
-  include ("connection.php");
+  include ("connect2.php");
   
-  if (isset($_POST['submit'])) {
+  if (isset($_POST['register'])) {
       
       $errorMsg = "";
     
@@ -26,7 +26,7 @@
                   VALUES('$email','$password')";
           $result = mysqli_query($conn, $query);
       if ($result == true) {
-          header("Location:rave.php");
+          header("Location:signin2.php");
       }else{
           $errorMsg  = "You are not Registred..Please Try again";
       }

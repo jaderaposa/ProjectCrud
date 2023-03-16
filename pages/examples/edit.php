@@ -902,6 +902,7 @@
                     <div class="card">
                         <div class="header">
                         <?php
+                        include "display.php";
                         $id = $_GET['id'];
                         $query = "SELECT * FROM students WHERE id = '$id'";
 
@@ -989,7 +990,8 @@
                                     </div>
                                     <label for="image">Image</label>
                                     <div class="form-group">
-                                        <input type="file"  class="form-control" name="image" id="image" min="1" required>
+                                        <img src="../../images/<?php echo $row['image'];?>" width="200" height="150" style="border: 2px solid black;">
+                                        <input type="file" class="form-control" name="image" id="image" min="1" src="../../images/" value="<?php echo $image_base64; ?>">
                                     </div>
                                     <br>
                                     <button style="margin" class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Update</button>
