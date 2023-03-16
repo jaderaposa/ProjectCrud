@@ -2375,7 +2375,7 @@ body {
   background-image: url(../images/bg.png);
   background-repeat: no-repeat;
   background-size:cover;
-  background-size:100% 100%;
+  /* background-size:100% 100%; */
 }
 h1,
 h2,
@@ -7625,7 +7625,7 @@ fieldset[disabled] .form-control {
   .sidebar .menu {
     position: relative;
     overflow-y: auto;
-    height:70vh; 
+    height:auto; 
     z-index: -1;}
     .sidebar .menu .list {
       list-style: none;
@@ -7667,10 +7667,10 @@ fieldset[disabled] .form-control {
         -o-transform: scale(0);
         -webkit-transform: scale(0);
         transform: scale(0); }
-      .sidebar .menu .list .menu-toggle.toggled:before {
-}
-      .sidebar .menu .list .menu-toggle.toggled:after {
-}
+      /* .sidebar .menu .list .menu-toggle.toggled:before {
+} */
+      /* .sidebar .menu .list .menu-toggle.toggled:after {
+} */
       .sidebar .menu .list a {
         color: #747474;
         position: relative;
@@ -7784,10 +7784,10 @@ fieldset[disabled] .form-control {
   margin: 5% auto;
   overflow-x: hidden; }
   .login-page .login-box .msg {
-    color: #555;
+    color: black;
     font-weight: bold;
-    margin-bottom: 30px;
-    text-align: center; }
+    font-size: 20px;
+    margin-bottom: 30px;}
   .login-page .login-box a {
     font-size: 14px;
     text-decoration: none;

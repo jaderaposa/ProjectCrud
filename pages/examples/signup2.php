@@ -38,14 +38,16 @@
         <div class="card"> 
             <div class="body">
             <!-- <div id="blur"></div> -->
-                <form method="POST" action="login.php" name="users">
-                    <div class="msg" style="font-size: 15px;text-align: center;">Sign In to Initiate Bootstrap Sequence</div>
+                <form method="POST" action="#" name="users">
+                    <div class="parent" style="text-align: center;">
+                    <div class="msg">SIGN UP!</div>
+                    </div>
                     <div class="input-group">
                         <span class="input-group-addon">
                             <i class="material-icons">person</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" id="username" name="username" placeholder="Username" required autofocus>
+                            <input type="text" class="form-control" id="username" name="username" placeholder="Your Preferred Username" required autofocus>
                         </div>
                     </div>
                     <div class="input-group">
@@ -53,38 +55,39 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Your Preferred Password" required>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-xs-8 p-t-5">
-                            <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Remember My Account</label>
-                        
-                        </div>
-                        <div class="col-xs-4">
-                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">ENTER</button>
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="material-icons">check</i>
+                        </span>
+                        <div class="form-line">
+                            <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirm Your Password" required>
                         </div>
                     </div>
-                    <div class="row m-t-15 m-b--20">
-                        <div class="col-xs-6">
-                            <p>No Account Yet?<br>Click&nbsp;<a href="signup2.php" style="text-decoration-line: underline;font-weight: bolder;">Here</a>&nbsp;To Register</p>
+                    <div class="row" style="display: flex;">
+                        <div class="box-1">
+                            <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
                         </div>
-                        <div class="col-xs-6 align-right">
-                            <a href="forgot-password.html">Forgot Your Password?</a>
+                        <div class="box-2" style="transform: translateX(70px);">
+                            <button class="btn btn-block bg-pink waves-effect" type="submit" name="register" style="width: auto;">REGISTER</button>
                         </div>
-
-                        <?php
-                        // if(isset($_SESSION["error"])){
-                        //     $error = $_SESSION["error"];
-                        //     echo "<span>$error</span>";
-                        // }
-                        ?>  
                     </div>
                 </form>
             </div>
         </div>
     </div>
+
+<style>
+
+.box-1, .box-2 {
+    width: 50%;
+    padding: 1rem;
+    box-sizing: border-box;
+    }
+
+</style>
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>

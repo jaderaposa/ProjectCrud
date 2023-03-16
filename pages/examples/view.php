@@ -307,14 +307,13 @@
             <!-- Menu -->
             <div class="menu">
                 <ul class="list">
-                    <li class="header">MAIN NAVIGATION</li>
+                    <li class="header">NAVIGATION</li>
                     <li>
-                        <a href="students2.php">
-                            <i class="material-icons">home</i>
+                        <a href="">
                             <span>Home</span>
                         </a>
-                    </li>
-                    <!--<li>
+                    </li> <!--
+                    <li>
                         <a href="../../pages/typography.html">
                             <i class="material-icons">text_fields</i>
                             <span>Typography</span>
@@ -326,7 +325,7 @@
                             <span>Helper Classes</span>
                         </a>
                     </li>
-                    <li>
+                   -- <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Widgets</span>
@@ -449,14 +448,13 @@
                                 <a href="../../pages/ui/waves.html">Waves</a>
                             </li>
                         </ul>
-                    </li>
-                    <li class="active">
+                    </li> 
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">assignment</i>
                             <span>Forms</span>
                         </a>
                         <ul class="ml-menu">
-                            <li class="active">
+                            <li>
                                 <a href="../../pages/forms/basic-form-elements.html">Basic Form Elements</a>
                             </li>
                             <li>
@@ -476,23 +474,22 @@
                             </li>
                         </ul>
                     </li> -->
-                    <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">view_list</i>
-                            <span>Students</span>
-                        </a>
+                    <li class="active">
+                        <a href="students2.php" class="menu-toggle">
+                            <span>Student Data Table</span>
+                        </a> <!--
                         <ul class="ml-menu">
-                            <!-- <li>
+                            <li>
                                 <a href="../../pages/tables/normal-tables.html">Normal Tables</a>
-                            </li> -->
+                            </li> 
                             <li class="active">
-                                <a href="students2.php">Student Data Table</a>
-                            </li>
-                            <!-- <li>
+                                <a href="#">Student Data Table</a>
+                            </li> 
+                             <li>
                                 <a href="../../pages/tables/editable-table.html">Editable Tables</a>
-                            </li> -->
-                        </ul>
-                    </li> <!--
+                            </li> 
+                        </ul> 
+                    </li>
                     <li>
                         <a href="javascript:void(0);" class="menu-toggle">
                             <i class="material-icons">perm_media</i>
@@ -540,7 +537,7 @@
                                 <a href="../../pages/examples/profile.html">Profile</a>
                             </li>
                             <li>
-                                <a href="../../pages/examples/sign-in.html">Sign In</a>
+                                <a href="signin2.php">Sign In</a>
                             </li>
                             <li>
                                 <a href="../../pages/examples/sign-up.html">Sign Up</a>
@@ -617,13 +614,13 @@
                                 </ul>
                             </li>
                         </ul>
-                    </li> -->
-                    <!-- <li>
-                        <a href="../changelogs.html">
+                    </li>
+                    <li>
+                        <a href="#">
                             <i class="material-icons">update</i>
                             <span>Changelogs</span>
                         </a>
-                    </li> -->
+                    </li>
                     <li class="header">LABELS</li>
                     <li>
                         <a href="javascript:void(0);">
@@ -647,14 +644,14 @@
             </div>
             <!-- #Menu -->
             <!-- Footer -->
-            <div class="legal">
+            <!-- <div class="legal">
                 <div class="copyright">
                     &copy; 2016 - 2017 <a href="javascript:void(0);">AdminBSB - Material Design</a>.
                 </div>
                 <div class="version">
                     <b>Version: </b> 1.0.5
                 </div>
-            </div>
+            </div> -->
             <!-- #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
@@ -805,9 +802,9 @@
 
     <section class="content">
         <div class="container-fluid">
-            <div class="block-header">
+            <!-- <div class="block-header">
                 <h2>JADED'S STUDENT VIEW</h2>
-            </div>
+            </div> -->
             <!-- Input -->
             <?php
                 include "connect2.php";
