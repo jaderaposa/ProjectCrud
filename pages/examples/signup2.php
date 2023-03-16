@@ -58,15 +58,7 @@
                             <input type="password" class="form-control" name="password" id="password" placeholder="Your Preferred Password" required>
                         </div>
                     </div>
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="material-icons">check</i>
-                        </span>
-                        <div class="form-line">
-                            <input type="password" class="form-control" name="confirmpassword" id="confirmpassword" placeholder="Confirm Your Password" required>
-                        </div>
-                    </div>
-                    <div class="row" style="display: flex;">
+                    <div class="row" style="display: flex;margin: 0;transform: translateX(-5px);">
                         <div class="box-1">
                             <button onClick="window.location.href='students2.php';" type="button" class="btn btn-info" href="students2.php">Back</button>
                         </div>
