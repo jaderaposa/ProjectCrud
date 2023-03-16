@@ -19,10 +19,10 @@
 				</h1>                                                           
 			</div>
 			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
 				<a href='delete.php?id=<?php echo $id; ?>'>
-					<button type="button" class="btn btn-primary">Yes</button>
+					<button type="button" class="btn btn-secondary">Yes</button>
 				</a>
+				<button type="button" class="btn btn-secondary" data-dismiss="modal"> No </button>
 			</div>
 			<!-- </form> -->
 		</div>
