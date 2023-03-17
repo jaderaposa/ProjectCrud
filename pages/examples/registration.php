@@ -26,7 +26,8 @@
                   VALUES('$email','$password')";
           $result = mysqli_query($conn, $query);
       if ($result == true) {
-          header("Location:signin2.php");
+        echo "<script>window.alert('Successfully Registered!');</script>";
+        echo "<script>window.location.replace('signin2.php');</script>";
       }else{
           $errorMsg  = "You are not Registred..Please Try again";
       }

@@ -2539,7 +2539,7 @@ section.content {
 .btn-primary:hover,
 .btn-primary:active,
 .btn-primary:focus {
-  background-color: black !important; }
+  background-color: rgb(0, 114, 245) !important; }
 
 .btn-default,
 .btn-default:hover,

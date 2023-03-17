@@ -74,7 +74,8 @@
 
 
                         if($conn->query($query) === TRUE) {
-                            header('Location: students2.php?msg=Successfully Uploaded!');
+                            echo "<script>window.alert('Student Record Successfully Added!'); </script>";
+                            echo "<script>window.location.replace('students2.php');</script>";
                         } else {
                             echo '<script>window.alert("ERROR!")</script>';
                         }

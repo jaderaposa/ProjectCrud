@@ -137,7 +137,7 @@ $fname = $_GET['fname'];
 
             echo 
             
-            "<script>alert('Successfully Updated!'); window.location.assign('students2.php');
+            "<script>alert('Student Record Successfully Updated!'); window.location.assign('students2.php');
             
             
             

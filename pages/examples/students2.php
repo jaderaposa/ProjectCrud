@@ -1,4 +1,7 @@
-﻿<?php
+﻿<!DOCTYPE html>
+<html>
+
+<?php
     session_start();
     if (isset($_SESSION["email"])) {
     
@@ -53,8 +56,7 @@
 
 
 
-<!DOCTYPE html>
-<html>
+
 
 <head>
     <meta charset="UTF-8">
@@ -79,6 +81,12 @@
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
 
+    <!-- another animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+
     <!-- JQuery DataTable Css -->
     <link href="../../plugins/jquery-datatable/skin/bootstrap/css/dataTables.bootstrap.css" rel="stylesheet">
 
@@ -88,6 +96,8 @@
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
+
+</style>
 
 <body class="theme-red">
     <div class="page-loader-wrapper">
@@ -126,7 +136,7 @@
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="../../index.html">Jade BootStrap Based - Materialization</a>
+                <a class="navbar-brand jaded" href="../../index.html">Jade BootStrap Based - Materialization</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">

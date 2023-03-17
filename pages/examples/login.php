@@ -111,12 +111,15 @@
         if(mysqli_num_rows($result) == 1){
           while ($row = mysqli_fetch_assoc($result)) {
             if (password_verify($password, $row['password'])) {
-                  session_start();
-                  $_SESSION["email"] = true;
-                  $_SESSION["id"] = $row["id"];
+              session_start();
+              
+              $_SESSION["email"] = true;
+                  
 
               if (isset($_SESSION["email"])) {
                 $_SESSION["login"] = true;
+                $_SESSION["id"] = $row["id"];
+                
                 echo "<script>window.location.assign('students2.php')</script>" ;
               }
             }else{

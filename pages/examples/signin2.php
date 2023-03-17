@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿ <!DOCTYPE html>
 <?php
     include "connect2.php";
     session_start();
@@ -24,6 +24,11 @@
 
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
+    <!-- another animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -31,11 +36,11 @@
 
 <body class="login-page">
     <div class="login-box">
-        <div class="logo">
+        <div class="logo animate__animated animate__heartBeat animate__infinite">
             <a href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
             <small>Jade BootStrap Based Game</small>
         </div>
-        <div class="card"> 
+        <div class="card animate__animated animate__fadeIn animate__delay-1s"> 
             <div class="body">
             <!-- <div id="blur"></div> -->
                 <form method="POST" action="login.php" name="users">
