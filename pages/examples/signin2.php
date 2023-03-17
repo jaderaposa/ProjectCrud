@@ -36,7 +36,7 @@
 
 <body class="login-page">
     <div class="login-box">
-        <div class="logo animate__animated animate__heartBeat animate__infinite">
+        <div class="logo animate__animated animate__heartBeat animate__infinite animate__fast">
             <a href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
             <small>Jade BootStrap Based Game</small>
         </div>
