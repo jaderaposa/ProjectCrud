@@ -915,9 +915,9 @@
                                                 <td><?php echo $row['school']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
                                                 <td class="jaded" style="display: space">
-                                                    <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View</a>
-                                                    <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit</a>
-                                                    <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete</button>
+                                                    <a class='btn btn-primary' href='view.php?id=<?php echo $row['id']; ?>'>View&nbsp;&nbsp;<i class="fa fa-search"  aria-hidden="true"></i></a>
+                                                    <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete&nbsp;&nbsp;<i class="fa fa-trash" aria-hidden="true"></i></button>
                                                 </td>
                                             <?php include "modal.php"; ?>    
                                             </tr>
