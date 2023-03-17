@@ -17,41 +17,7 @@
 
 
 
-<?php
 
-  //  require 'connect2.php';
-
-  //  if(isset($_POST["submit"])){
-
-  //    $uname = $_POST["username"];
-  //    $pass = $_POST["password"];
-  //    $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
-  //    $row = mysqli_fetch_assoc($result);
-     
-  //    if(mysqli_num_rows($result) > 0){
-
-  //      if($pass == $row['password']){
-  //       session_start();
-  //       $_SESSION["users"] = true;
-  //       $_SESSION["id"] = $row["id"];
-  //       if (isset($_SESSION["users"])) {
-  //         $_SESSION["login"] = true;
-  //       }
-  //       echo "<script>window.location.assign('students2.php');</script>";
-  //       exit;
-  //      }
-
-  //      else{ 
-  //       echo "<script>window.location.assign('signin2.php');</script>";
-  //      }
-       
-  //    }
-  //    else{
-  //      echo "<script> alert('User not Registered'); </script>";
-  //      echo "<script>window.location.assign('signin2.php');</script>";
-  //    }
-  //  }
-?>
 
 <!-- <style>
 
@@ -136,11 +102,11 @@
 
       $errorMsg = "";
 
-      $email    = mysqli_real_escape_string($conn, $_POST['email']);
+      $user    = mysqli_real_escape_string($conn, $_POST['email']);
       $password = mysqli_real_escape_string($conn, $_POST['password']); 
       
   if (!empty($email) || !empty($password)) {
-        $query  = "SELECT * FROM users WHERE email = '$email'";
+        $query  = "SELECT * FROM users WHERE email = '$user'";
         $result = mysqli_query($conn, $query);
         if(mysqli_num_rows($result) == 1){
           while ($row = mysqli_fetch_assoc($result)) {
@@ -154,14 +120,54 @@
                 echo "<script>window.location.assign('students2.php')</script>" ;
               }
             }else{
-                $errorMsg = "Email or Password Is Invalid";
-            }    
-          }
+                // $errorMsg = "Email or Password Is Invalid";
+                echo "<script> alert('Wrong Password!'); </script>";
+              }    
+          } 
         }else{
-          $errorMsg = "No user found on this email";
+          // $errorMsg = "No user found on this email";
+          echo "<script> alert('User not Registered!'); </script>";
         } 
     }else{
-      $errorMsg = "Email and Password is required";
+      // $errorMsg = "Email and Password is required";
+      echo "<script> alert(''); </script>";
+
     }
   }
+?>
+
+<?php
+
+  //  require 'connect2.php';
+
+  //  if(isset($_POST["submit"])){
+
+  //    $uname = $_POST["username"];
+  //    $pass = $_POST["password"];
+  //    $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$uname'");
+  //    $row = mysqli_fetch_assoc($result);
+     
+  //    if(mysqli_num_rows($result) > 0){
+
+  //      if($pass == $row['password']){
+  //       session_start();
+  //       $_SESSION["users"] = true;
+  //       $_SESSION["id"] = $row["id"];
+  //       if (isset($_SESSION["users"])) {
+  //         $_SESSION["login"] = true;
+  //       }
+  //       echo "<script>window.location.assign('students2.php');</script>";
+  //       exit;
+  //      }
+
+  //      else{ 
+  //       echo "<script>window.location.assign('signin2.php');</script>";
+  //      }
+       
+  //    }
+  //    else{
+  //      echo "<script> alert('User not Registered'); </script>";
+  //      echo "<script>window.location.assign('signin2.php');</script>";
+  //    }
+  //  }
 ?>
