@@ -121,17 +121,19 @@
               }
             }else{
                 // $errorMsg = "Email or Password Is Invalid";
-                echo "<script> alert('Wrong Password!'); </script>";
+                echo "<script>window.alert('Wrong Password!'); </script>";
+                echo "<script>window.location.replace('signin2.php');</script>";
               }    
           } 
         }else{
           // $errorMsg = "No user found on this email";
-          echo "<script> alert('User not Registered!'); </script>";
+          echo "<script>window.alert('Email is not registered!');</script>";
+          echo "<script>window.location.replace('signin2.php');</script>";
         } 
     }else{
       // $errorMsg = "Email and Password is required";
-      echo "<script> alert(''); </script>";
-
+      echo "<script>window.alert('Are you sure you want to leave this page?');</script>";
+      echo "<script>window.location.replace('signin2.php');</script>";
     }
   }
 ?>

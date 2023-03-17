@@ -45,7 +45,7 @@
                             <i class="material-icons">email</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required autofocus>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
                         </div>
                     </div>
                     <div class="input-group">
