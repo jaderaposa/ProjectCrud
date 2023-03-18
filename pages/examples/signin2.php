@@ -10,7 +10,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Sign In | Jade BootStrap Based Game</title>
     <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../xbox.png" type="image/x-icon">
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
@@ -34,6 +34,15 @@
     <link href="../../css/style.css" rel="stylesheet">
 </head>
 
+<style>
+
+.card.animate__animated.animate__fadeIn.animate__delay-1s {
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid #333;
+    backdrop-filter: blur(5px);
+}
+</style>
+
 <body class="login-page">
     <div class="login-box">
         <div class="logo animate__animated animate__heartBeat animate__infinite animate__fast">
@@ -50,7 +59,7 @@
                             <i class="material-icons">email</i>
                         </span>
                         <div class="form-line">
-                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required>
+                            <input type="text" class="form-control" id="email" name="email" placeholder="Email" required style="background:transparent; border:none;">
                         </div>
                     </div>
                     <div class="input-group">
@@ -58,14 +67,13 @@
                             <i class="material-icons">lock</i>
                         </span>
                         <div class="form-line">
-                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+                            <input type="password" class="form-control" name="password" id="password" placeholder="Password" required style="background:transparent; border:none;">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col-xs-8 p-t-5">
                             <input type="checkbox" name="rememberme" id="rememberme" class="filled-in chk-col-pink">
-                            <label for="rememberme">Remember My Account</label>
-                        
+                            <label for="rememberme"><b>Remember My Account</b></label>
                         </div>
                         <div class="col-xs-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">ENTER</button>
@@ -73,10 +81,10 @@
                     </div>
                     <div class="row m-t-15 m-b--20">
                         <div class="col-xs-6">
-                            <p>No Account Yet?<br>Click&nbsp;<a href="signup2.php" style="text-decoration-line: underline;font-weight: bolder;">Here</a>&nbsp;To Register</p>
+                            <p><b>No Account Yet?<br>Click&nbsp;<a href="signup2.php" style="text-decoration-line: underline;font-weight: bolder; color: red;">Here</a>&nbsp;To Register</b></p>
                         </div>
                         <div class="col-xs-6 align-right">
-                            <a href="forgot-password.html">Forgot Your Password?</a>
+                            <a href="forgot-password.html"><b>Forgot Your Password?</b></a>
                         </div>
 
                         <?php

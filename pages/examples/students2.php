@@ -63,7 +63,7 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <title>Data Table | Jade BootStrap Based - Materialization</title>
     <!-- Favicon-->
-    <link rel="icon" href="../../favicon.ico" type="image/x-icon">
+    <link rel="icon" href="../../xbox.png" type="image/x-icon">
 
     <!-- Icons -->
     <script src="https://kit.fontawesome.com/ee7690777c.js" crossorigin="anonymous"></script>
