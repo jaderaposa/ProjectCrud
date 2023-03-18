@@ -1,10 +1,10 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Student Form | Jade BootStrap Based - Materialization</title>
+    <title>Profile | Jade BootStrap Based - Materialization</title>
     <!-- Favicon-->
     <link rel="icon" href="../../favicon.ico" type="image/x-icon">
 
@@ -20,18 +20,6 @@
 
     <!-- Animation Css -->
     <link href="../../plugins/animate-css/animate.css" rel="stylesheet" />
-
-    <!-- Bootstrap Material Datetime Picker Css -->
-    <link href="../../plugins/bootstrap-material-datetimepicker/css/bootstrap-material-datetimepicker.css" rel="stylesheet" />
-
-    <!-- Bootstrap DatePicker Css -->
-    <link href="../../plugins/bootstrap-datepicker/css/bootstrap-datepicker.css" rel="stylesheet" />
-
-    <!-- Wait Me Css -->
-    <link href="../../plugins/waitme/waitMe.css" rel="stylesheet" />
-
-    <!-- Bootstrap Select Css -->
-    <link href="../../plugins/bootstrap-select/css/bootstrap-select.css" rel="stylesheet" />
 
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
@@ -292,7 +280,7 @@
                     <div class="btn-group user-helper-dropdown">
                         <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                         <ul class="dropdown-menu pull-right">
-                            <li><a href="profile2.php"><i class="material-icons">person</i>Profile</a></li>
+                            <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
                             <li role="separator" class="divider"></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">group</i>Followers</a></li>
                             <li><a href="javascript:void(0);"><i class="material-icons">shopping_cart</i>Sales</a></li>
@@ -651,8 +639,8 @@
                 <div class="version">
                     <b>Version: </b> 1.0.5
                 </div>
-            </div> -->
-            <!-- #Footer -->
+            </div>
+            #Footer -->
         </aside>
         <!-- #END# Left Sidebar -->
         <!-- Right Sidebar -->
@@ -802,123 +790,396 @@
 
     <section class="content">
         <div class="container-fluid">
-            <!-- <div class="block-header">
-                <h2>JADED'S STUDENT VIEW</h2>
-            </div> -->
-            <!-- Input -->
-            <?php
-                include "connect2.php";
-                if(isset($_GET['id']))
-                {
-                    $student_id = mysqli_real_escape_string($conn, $_GET['id']);
-                    $query = "SELECT * FROM students WHERE id='$student_id' ";
-                    $query_run = mysqli_query($conn, $query);
+            <div class="row clearfix">
+                <div class="col-xs-12 col-sm-3">
+                    <div class="card profile-card">
+                        <div class="profile-header">&nbsp;</div>
+                        <div class="profile-body">
+                        <?php
+                        include "connect2.php";
+                        if(isset($_GET['id']))
+                        {
+                            $student_id = mysqli_real_escape_string($conn, $_GET['id']);
+                            $query = "SELECT * FROM students WHERE id='$student_id' ";
+                            $query_run = mysqli_query($conn, $query);
 
-                    if(mysqli_num_rows($query_run) > 0)
-                    {
-                        $student = mysqli_fetch_array($query_run);
-                        ?>
-            
-                                    <div class="row clearfix">
-                                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                            <div class="card">
-                                            <?php
-                                    
-                                            // $image = $student["image"];
+                            if(mysqli_num_rows($query_run) > 0)
+                            {
+                                $student = mysqli_fetch_array($query_run);
+                                ?>
+                            <div class="image-area">
+                                <img src="../../images/<?php echo $student['image'];?>" width="180" height="200" alt="profile" />
 
-                                            ?> 
-                                            <div class="module-border-wrap">
-                                                <div class="body">
-                                                        <img src="../../images/<?php echo $student['image'];?>" width="220" height="200" alt="Profile_Img" style="float: right; border: 5px solid black;"/>                                                      
-                                                    <?php   
-                                                    }       
-                                                    ?>
-                                                    <h2 class="card-inside-title">
-                                                        Student View Details
-                                                    </h2>
-                                                    
-                                                    
-                                                    <!-- <ul class="header-dropdown m-r--5">
-                                                        <li>
-                                                        <a class='btn btn-secondary' href='studentform2.php'>Add</a>
-                                                        </li>
-                                                    </ul> -->                                                   
-                                                    <br>                                                   
-                                                    <label for="fullname"><u>Full Name</u></label>
-                                                    <div class="form-group">                                                          
-                                                        <p class="form-control">
-                                                            <b><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></b>
-                                                        </p>
+                                <?php   
+                                }       
+                                ?>
+                            </div>
+                            <div class="content-area">
+                                <h3><b><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></b></h3>
+                                <p style="color:black;font-weight:normal;transform: translateY(-15px);">Student</p>
+                            </div>
+                        </div>
+                        <div class="profile-footer">
+                            <ul>
+                                <li>
+                                    <span>Sex</span>
+                                    <span><?=$student['sex'];?></span>
+                                </li>
+                                <li>
+                                    <span>Birthdate</span>
+                                    <span><?=$student['birthdate'];?></span>
+                                </li>
+                                <li>
+                                    <span>Address</span>
+                                    <span><?=$student['address'];?></span>
+                                </li>
+                                <li>
+                                    <span>School</span>
+                                    <span><?=$student['school'];?></span>
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-lg waves-effect btn-block">FOLLOW</button>
+                        </div>
+                    </div>
+
+                    <div class="card card-about-me">
+                        <div class="header" style="text-align: center;">
+                            <h2 style="display: inline-flex;margin: 5px;">ABOUT ME</h2>
+                        </div>
+                        <div class="body">
+                            <ul>
+                                <li>
+                                    <div class="title">
+                                        <i class="material-icons">library_books</i>
+                                        Education
+                                    </div>
+                                    <div class="content">
+                                        B.S. in Information Technology from Divine Word College of Legazpi
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <i class="material-icons">location_on</i>
+                                        Location
+                                    </div>
+                                    <div class="content">
+                                        Albay, Philippines
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <i class="material-icons">edit</i>
+                                        Skills
+                                    </div>
+                                    <div class="content">
+                                        <span class="label bg-red">UI Design</span>
+                                        <span class="label bg-teal">JavaScript</span>
+                                        <span class="label bg-blue">PHP</span>
+                                        <span class="label bg-amber">Node.js</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="title">
+                                        <i class="material-icons">notes</i>
+                                        Description
+                                    </div>
+                                    <div class="content">
+                                        I am the conqueror of worlds, the Alpha and the Omega. Thou shall bow before me.
+                                    </div>
+                                </li>
+                                <?php
+                                // }
+                                // else 
+                                // {
+                                //     echo "<h4>No Such ID Found</h4>";
+                                // }
+                                ?>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-12 col-sm-9">
+                    <div class="card">
+                        <div class="body">
+                            <div>
+                                <ul class="nav nav-tabs" role="tablist">
+                                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+                                    <li role="presentation"><a href="#profile_settings" aria-controls="settings" role="tab" data-toggle="tab">Profile Settings</a></li>
+                                    <li role="presentation"><a href="#change_password_settings" aria-controls="settings" role="tab" data-toggle="tab">Change Password</a></li>
+                                </ul>
+
+                                <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                        <div class="panel panel-default panel-post">
+                                            <div class="panel-heading">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img src="../../images/<?php echo $student['image'];?>" width="" height="50"/>
+                                                        </a>
                                                     </div>
-                                                    <!-- <label for="middlename"><u>Middle name</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            <?=$student['middlename'];?>
-                                                        </p>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            <a href="#"><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></a>
+                                                        </h4>
+                                                        Shared publicly - 12 Feb 2023
                                                     </div>
-                                                    <label for="lastname"><u>Last name</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            <?=$student['lastname'];?>
-                                                        </p>                                                            
-                                                    </div> -->
-                                                    <label for="birthdate"><u>Birth Date</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            Was born in <b><?=$student['birthdate'];?></b>
-                                                        </p>                                                            
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post">
+                                                    <div class="post-heading">
+                                                        <p>A bracelet given to me by my partner in crime. I love you so much!</p>
                                                     </div>
-                                                    <label for="sex"><u>Sex</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            <b><?=$student['sex'];?></b>
-                                                        </p>                                                            
+                                                    <div class="post-content">
+                                                        <img src="../../images/bracelet.jpg" class="img-responsive" />
                                                     </div>
-                                                    <label for="school"><u>School</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            Studying in <b><?=$student['school'];?></b>
-                                                        </p>                                                            
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">thumb_up</i>
+                                                            <span>1M Likes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">comment</i>
+                                                            <span>124K Comments</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">share</i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-group">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" placeholder="Type a comment" />
                                                     </div>
-                                                    <label for="address"><u>Address</u></label>
-                                                    <div class="form-group">
-                                                        <p class="form-control">
-                                                            Lives in <b><?=$student['address'];?></b>
-                                                        </p>                                                            
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="tab-content">
+                                    <div role="tabpanel" class="tab-pane fade in active" id="home">
+                                        <div class="panel panel-default panel-post">
+                                            <div class="panel-heading">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img src="../../images/<?php echo $student['image'];?>" width="" height="50"/>
+                                                        </a>
                                                     </div>
-                                                   
-                                                    </form>
-                                                    <?php
-                                                        }
-                                                    
-                                                    else 
-                                                    {
-                                                        echo "<h4>No Such ID Found</h4>";
-                                                    }
-                                                    ?>
-                                                    <br>
-                                                    <br>
-                                                    <a class='btn btn-danger' href='students2.php'>Back</a>
-                                                </div>                                                                                                                                                                          
-                                            </div>                        
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            <a href="#"><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></a>
+                                                        </h4>
+                                                        Shared publicly - 12 Feb 2023
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post">
+                                                    <div class="post-heading">
+                                                        <p>Let's go Halleluka!</p>
+                                                    </div>
+                                                    <div class="post-content">
+                                                    <iframe width="100%" height="560" src="https://www.youtube.com/embed/rRtZ8kNwic0" title="Luka Doncic Top Plays of the Season So Far | 2022-23 Season" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">thumb_up</i>
+                                                            <span>1M Likes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">comment</i>
+                                                            <span>124K Comments</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">share</i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-group">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" placeholder="Type a comment" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="panel panel-default panel-post">
+                                            <div class="panel-heading">
+                                                <div class="media">
+                                                    <div class="media-left">
+                                                        <a href="#">
+                                                            <img src="../../images/<?php echo $student['image'];?>" height="50" />
+                                                        </a>
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">
+                                                            <a href="#"><?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?></a>
+                                                        </h4>
+                                                        Shared publicly - 12 Feb 2023
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                                <div class="post">
+                                                    <div class="post-heading">
+                                                        <p>This is the song that I'm addicted to recently. It's called Kelly Time by Owl City from the movie Castaway, in which Tom Hanks played the main character.</p>
+                                                    </div>
+                                                    <div class="post-content">
+                                                        <iframe width="100%" height="560" src="https://www.youtube.com/embed/QVFNyYqGZyk" title="Owl City - Kelly Time (Full Released Song) Lyrics [Full HD]" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">thumb_up</i>
+                                                            <span>5M Likes</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">comment</i>
+                                                            <span>1M Comments</span>
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#">
+                                                            <i class="material-icons">share</i>
+                                                            <span>Share</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+
+                                                <div class="form-group">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" placeholder="Type a comment" />
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-            </div>
-    </section>
-    <style>
-    .body {
-    background: white;
-    color: white;
-    padding: 2rem;
-}
+                                    
 
-    .module-border-wrap {
-    padding: 1rem;
-    position: relative;
-    background: linear-gradient(to bottom right, black, white);
-    padding: 5px;
-    }
-    </style>
+                                    <div role="tabpanel" class="tab-pane fade in" id="profile_settings">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="NameSurname" class="col-sm-2 control-label">Name Surname</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" id="NameSurname" name="NameSurname" placeholder="Name Surname" value="<?=$student['firstname'];?>&nbsp;<?=$student['middlename'];?>&nbsp;<?=$student['lastname'];?>" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="Email" class="col-sm-2 control-label">Email</label>
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <input type="email" class="form-control" id="Email" name="Email" placeholder="Email" value="example@example.com" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputExperience" class="col-sm-2 control-label">Experience</label>
+
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <textarea class="form-control" id="InputExperience" name="InputExperience" rows="3" placeholder="Experience"></textarea>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="InputSkills" class="col-sm-2 control-label">Skills</label>
+
+                                                <div class="col-sm-10">
+                                                    <div class="form-line">
+                                                        <input type="text" class="form-control" id="InputSkills" name="InputSkills" placeholder="Skills">
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <input type="checkbox" id="terms_condition_check" class="chk-col-red filled-in" />
+                                                    <label for="terms_condition_check">I agree to the <a href="#">terms and conditions</a></label>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-2 col-sm-10">
+                                                    <button type="submit" class="btn btn-danger">SUBMIT</button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div role="tabpanel" class="tab-pane fade in" id="change_password_settings">
+                                        <form class="form-horizontal">
+                                            <div class="form-group">
+                                                <label for="OldPassword" class="col-sm-3 control-label">Old Password</label>
+                                                <div class="col-sm-9">
+                                                    <div class="form-line">
+                                                        <input type="password" class="form-control" id="OldPassword" name="OldPassword" placeholder="Old Password" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="NewPassword" class="col-sm-3 control-label">New Password</label>
+                                                <div class="col-sm-9">
+                                                    <div class="form-line">
+                                                        <input type="password" class="form-control" id="NewPassword" name="NewPassword" placeholder="New Password" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <label for="NewPasswordConfirm" class="col-sm-3 control-label">New Password (Confirm)</label>
+                                                <div class="col-sm-9">
+                                                    <div class="form-line">
+                                                        <input type="password" class="form-control" id="NewPasswordConfirm" name="NewPasswordConfirm" placeholder="New Password (Confirm)" required>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <div class="col-sm-offset-3 col-sm-9">
+                                                    <button type="submit" class="btn btn-danger">SUBMIT</button>
+                                                </div>
+                                            </div>
+                                            <?php
+                                            }
+                                            else 
+                                            {
+                                                echo "<h4>No Such ID Found</h4>";
+                                            }
+                                            ?>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Jquery Core Js -->
     <script src="../../plugins/jquery/jquery.min.js"></script>
@@ -935,23 +1196,12 @@
     <!-- Waves Effect Plugin Js -->
     <script src="../../plugins/node-waves/waves.js"></script>
 
-    <!-- Autosize Plugin Js -->
-    <script src="../../plugins/autosize/autosize.js"></script>
-
-    <!-- Moment Plugin Js -->
-    <script src="../../plugins/momentjs/moment.js"></script>
-
-    <!-- Bootstrap Material Datetime Picker Plugin Js -->
-    <script src="../../plugins/bootstrap-material-datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
-
-    <!-- Bootstrap Datepicker Plugin Js -->
-    <script src="../../plugins/bootstrap-datepicker/js/bootstrap-datepicker.js"></script>
-
     <!-- Custom Js -->
     <script src="../../js/admin.js"></script>
-    <script src="../../js/pages/forms/basic-form-elements.js"></script>
+    <script src="../../js/pages/examples/profile.js"></script>
 
     <!-- Demo Js -->
     <script src="../../js/demo.js"></script>
 </body>
+
 </html>
