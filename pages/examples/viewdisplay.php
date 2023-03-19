@@ -821,22 +821,22 @@
                         </div>
                         <div class="profile-footer">
                             <ul>
-                                <li>
-                                    <span>Sex</span>
-                                    <span><?=$student['sex'];?></span>
-                                </li>
-                                <li>
-                                    <span>Birthdate</span>
-                                    <span><?=$student['birthdate'];?></span>
-                                </li>
-                                <li>
-                                    <span>Address</span>
-                                    <span><?=$student['address'];?></span>
-                                </li>
-                                <li>
-                                    <span>School</span>
-                                    <span><?=$student['school'];?></span>
-                                </li>
+                            <li>
+                                <span>Followers</span>
+                                <span>13,214,122</span>
+                            </li>
+                            <li>
+                                <span>Following</span>
+                                <span>1</span>
+                            </li>
+                            <li>
+                                <span>Friends</span>
+                                <span>432</span>
+                            </li>
+                            <li>
+                                <span>School</span>
+                                <span>432</span>
+                            </li>
                             </ul>
                             <button class="btn btn-primary btn-lg waves-effect btn-block">FOLLOW</button>
                         </div>
@@ -851,10 +851,10 @@
                                 <li>
                                     <div class="title">
                                         <i class="material-icons">library_books</i>
-                                        Education
+                                        School
                                     </div>
                                     <div class="content">
-                                        B.S. in Information Technology from Divine Word College of Legazpi
+                                        <?=$student['school'];?>
                                     </div>
                                 </li>
                                 <li>
@@ -863,7 +863,7 @@
                                         Location
                                     </div>
                                     <div class="content">
-                                        Albay, Philippines
+                                        <?=$student['address'];?>
                                     </div>
                                 </li>
                                 <li>

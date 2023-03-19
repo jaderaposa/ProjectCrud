@@ -828,8 +828,8 @@
                     </div>
 
                     <div class="card card-about-me">
-                        <div class="header">
-                            <h2>ABOUT ME</h2>
+                        <div class="header" style="text-align: center;">
+                            <h2 style="display: inline-flex;margin: 10px;">ABOUT ME</h2>
                         </div>
                         <div class="body">
                             <ul>

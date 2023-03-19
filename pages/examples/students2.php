@@ -884,15 +884,15 @@
                                     <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                         <thead>
                                             <tr>
-                                                <th>ID<br><i class="fa-solid fa-id-card"></i></th>
-                                                <th>First Name<br><i class="fa-solid fa-person"></i></i></th>
-                                                <th>Middle Name<br><i class="fa-solid fa-person"></i></th>
-                                                <th>Last Name<br><i class="fa-solid fa-person"></i></th>
-                                                <th>Birth Date<br><i class="fa-solid fa-cake-candles"></i></i></th>
-                                                <th>Sex<br><i class="fa-solid fa-venus-mars"></i></th>
-                                                <th>School<br><i class="fa-solid fa-school"></i></i></i></th>
-                                                <th>Address<br><i class="fa-solid fa-address-book"></i></th>
-                                                <th>Actions<br><i class="fa-solid fa-computer-mouse"></i></th>                                         
+                                                <th>ID&nbsp;&nbsp;<i class="fa-solid fa-id-card"></i></th>
+                                                <th>First Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></i></th>
+                                                <th>Middle Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></th>
+                                                <th>Last Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></th>
+                                                <th>Birth Date&nbsp;&nbsp;<i class="fa-solid fa-cake-candles"></i></i></th>
+                                                <th>Sex&nbsp;&nbsp;<i class="fa-solid fa-venus-mars"></i></th>
+                                                <th>School&nbsp;&nbsp;<i class="fa-solid fa-school"></i></i></i></th>
+                                                <th>Address&nbsp;&nbsp;<i class="fa-solid fa-address-book"></i></th>
+                                                <th>Actions&nbsp;&nbsp;<i class="fa-solid fa-computer-mouse"></i></th>                                         
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -914,7 +914,7 @@
                                                 <td><?php echo $row['sex']; ?></td>
                                                 <td><?php echo $row['school']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
-                                                <td class="jaded" style="display: space">
+                                                <td class="jaded" style="text-align: center;">
                                                     <a class='btn btn-primary' href='viewdisplay.php?id=<?php echo $row['id']; ?>'>View&nbsp;&nbsp;<i class="fa fa-search"  aria-hidden="true"></i></a>
                                                     <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></a>
                                                     <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete&nbsp;&nbsp;<i class="fa fa-trash" aria-hidden="true"></i></button>
