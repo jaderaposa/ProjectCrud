@@ -988,8 +988,9 @@
                                         </div>
                                     </div>
                                     <label for="image">Image</label>
-                                    <div class="form-group" style="display: flex;justify-content: space-between;width: 30%;position: relative;">
+                                    <div class="form-group" style="display: flex;justify-content: space-between;width: 30%;position: relative;align-items: flex-end;">
                                         <img src="../../images/<?php echo $row['image'];?>" style="border: 2px solid black;width: 250px;height: 180px;">
+                                        &nbsp;&nbsp;&nbsp;
                                         <input type="file" class="form-control" name="image" id="image" min="1" value="<?php echo $row['image']; ?>">
 
                                     </div>
