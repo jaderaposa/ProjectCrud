@@ -120,18 +120,24 @@ $fname = $_GET['fname'];
                 $student_query = "SELECT * FROM students WHERE id='$id'";
                 $student_query_run = mysqli_query($conn, $student_query);
                 foreach($student_query_run as $stud_row)
+                {
+                    // echo $stud_row['image'];
+                    if($filename == NULL)
                     {
-                        // echo $stud_row['image'];
-                        if($filename == NULL)
-                        {
-                            // UPDATE WITH EXISTING IMAGE
-                            $image_data = $stud_row['image'];
-                        }
-                        else 
-                        {
-                            // UPDATE WITH NEW IMAGE AND DELETE WITH OLD IMAGE
-                        }
+                        // UPDATE WITH EXISTING IMAGE
+                        $image_data = $stud_row['image'];
                     }
+                    else 
+                    {
+                        // UPDATE WITH NEW IMAGE AND DELETE WITH OLD IMAGE
+                        if($img_path = "../../images/".$stud_row['image'])
+                        {
+                            unlink($img_path);
+                            $image_data = $filename;
+                        }
+                        
+                    }
+                }
                 
 
             mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$image_data' WHERE id = '$id' ");
