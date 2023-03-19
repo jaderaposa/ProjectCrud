@@ -28,8 +28,10 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
+    />
 
+    <!-- Google Font Effect -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=3d">
     <!-- Custom Css -->
     <link href="../../css/style.css" rel="stylesheet">
 </head>
@@ -45,10 +47,10 @@
 
 <body class="login-page">
     <div class="login-box">
-        <div class="logo animate__animated animate__heartBeat animate__infinite animate__fast">
-            <a href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
-            <small>Jade BootStrap Based Game</small>
-        </div>
+        <div class="logo">
+            <a class="font-effect-3d animate__animated animate__heartBeat animate__infinite animate__slower" href="javascript:void(0);">Jaded<b>BootStrapMaster</b></a>
+            <!-- <small>Jade BootStrap Based Game</small> -->
+        </div>  
         <div class="card animate__animated animate__fadeIn animate__delay-1s"> 
             <div class="body">
             <!-- <div id="blur"></div> -->
@@ -58,7 +60,7 @@
                         <span class="input-group-addon">
                             <i class="material-icons">email</i>
                         </span>
-                        <div class="form-line">
+                        <div class="form-line fire-animation">
                             <input type="text" class="form-control" id="email" name="email" placeholder="Email" required style="background:transparent; border:none;">
                         </div>
                     </div>

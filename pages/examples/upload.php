@@ -79,7 +79,6 @@
                         } else {
                             echo '<script>window.alert("ERROR!")</script>';
                         }
-
                     } else {
                         echo "Sorry, there was an error uploading your file.";
                     }
