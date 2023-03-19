@@ -990,7 +990,7 @@
                                     <label for="image">Image</label>
                                     <div class="form-group">
                                         <img src="../../images/<?php echo $row['image'];?>" width="200" height="150" style="border: 2px solid black;">
-                                        <input type="file" class="form-control" name="image" id="image" min="1">
+                                        <input type="file" class="form-control" name="image" id="image" min="1" value="<?php echo $row['image']; ?>">
                                     </div>
                                     <br>
                                     <button style="margin" class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Update</button>

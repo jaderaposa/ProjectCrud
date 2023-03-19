@@ -117,7 +117,7 @@
                   
 
               if (isset($_SESSION["email"])) {
-                echo "<script>window.location.assign('students2.php')</script>" ;
+                echo "<script>window.location.replace('students2.php')</script>" ;
                 $_SESSION["login"] = true;
                 $_SESSION["id"] = $row["id"];
               }

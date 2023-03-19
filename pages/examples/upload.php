@@ -8,7 +8,7 @@
 
 
     // Check if a file has been uploaded
-    if(isset($_FILES['image'])) {
+    // if(isset($_FILES['image'])) {
 
       // Make sure the file was sent without errors
     //   if($_FILES['uploaded_file']['error'] == 0) {
@@ -84,14 +84,6 @@
                         echo "Sorry, there was an error uploading your file.";
                     }
                 }
-            }    
-
-        else {
-            if (!file_exists('user_profile/'.$id.'.txt')) {
-                // Upload file
-                move_uploaded_file($_FILES['uploaded_file']['tmp_name'], 'user_profile/'.$user_id.'.txt');
-            };
-        }
         // /* WORKING */
 
         // if (isset ($_POST['submit_form_get'])){

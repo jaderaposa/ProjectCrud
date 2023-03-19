@@ -106,9 +106,7 @@ $fname = $_GET['fname'];
 
             $id =$_POST['id'];
             if (isset($_POST['submit_form_get'])) {
-                move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);
-                            
-       
+                                 
                 $firstname = $_POST['firstname'];
                 $middlename = $_POST['middlename'];
                 $lastname = $_POST['lastname'];
@@ -116,13 +114,58 @@ $fname = $_GET['fname'];
                 $sex = $_POST['sex'];
                 $school = $_POST['school'];
                 $address = $_POST['address'];
+
                 $filename = htmlspecialchars (basename($_FILES["image"]["name"]));
 
+                $student_query = "SELECT * FROM students WHERE id='$id'";
+                $student_query_run = mysqli_query($conn, $student_query);
+                foreach($student_query_run as $stud_row)
+                    {
+                        // echo $stud_row['image'];
+                        if($filename == NULL)
+                        {
+                            // UPDATE WITH EXISTING IMAGE
+                            $image_data = $stud_row['image'];
+                        }
+                        else 
+                        {
+                            // UPDATE WITH NEW IMAGE AND DELETE WITH OLD IMAGE
+                        }
+                    }
+                
+
+            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$image_data' WHERE id = '$id' ");
+            
             $result=mysqli_query($conn,"SELECT * FROM students");
             $row=mysqli_num_rows($result);
 
-            mysqli_query($conn," UPDATE students SET firstname='$firstname', middlename='$middlename', lastname='$lastname', birthdate='$birthdate', sex='$sex', school='$school', address='$address', image='$filename' WHERE id = '$id' ");
-            
+            if($result)
+            {
+                if($filename == NULL)
+                {
+                    // UPDATE WITH EXISTING IMAGE
+                    echo "<script>window.alert('Student Record Successfully Added!'); </script>";
+                    echo "<script>window.location.assign('students2.php');</script>";
+                }
+                else 
+                {
+                    // UPDATE WITH NEW IMAGE AND DELETE WITH OLD IMAGE
+                    move_uploaded_file($_FILES["image"]["tmp_name"],"../../images/" . $_FILES["image"]["name"]);
+                    echo "<script>window.alert('Student Record Successfully Added!'); </script>";
+                    echo "<script>window.location.assign('students2.php');</script>";
+                } 
+                // echo "<script>alert('Student Record Successfully Updated!'); window.location.assign('students2.php'); </script>";
+            }
+            else 
+            {
+            $_SESSION['status'] = "Student Record Failed to Update";
+            header('Location: students.php');
+            }
+
+
+
+
+
             // echo '<div id="dialogBox"> 
             // <p>Successfully Updated Student Info!</p>
             // </div> 
@@ -135,13 +178,6 @@ $fname = $_GET['fname'];
             //   </script>
             // ';
 
-            echo 
-            
-            "<script>alert('Student Record Successfully Updated!'); window.location.assign('students2.php');
-            
-            
-            
-            </script>";
             
             
               
