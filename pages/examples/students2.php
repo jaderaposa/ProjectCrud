@@ -97,7 +97,13 @@
     <link href="../../css/themes/all-themes.css" rel="stylesheet" />
 </head>
 
-</style>
+<!-- <style>
+
+th.sorting_asc {
+    width: 56px;
+}
+
+</style> -->
 
 <body class="theme-red">
     <div class="page-loader-wrapper">
@@ -884,15 +890,15 @@
                                     <table class="table table-bordered table-striped table-hover js-basic-example dataTable">
                                         <thead>
                                             <tr>
-                                                <th>ID&nbsp;&nbsp;<i class="fa-solid fa-id-card"></i></th>
-                                                <th>First Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></i></th>
-                                                <th>Middle Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></th>
-                                                <th>Last Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i></th>
-                                                <th>Birth Date&nbsp;&nbsp;<i class="fa-solid fa-cake-candles"></i></i></th>
-                                                <th>Sex&nbsp;&nbsp;<i class="fa-solid fa-venus-mars"></i></th>
-                                                <th>School&nbsp;&nbsp;<i class="fa-solid fa-school"></i></i></i></th>
-                                                <th>Address&nbsp;&nbsp;<i class="fa-solid fa-address-book"></i></th>
-                                                <th>Actions&nbsp;&nbsp;<i class="fa-solid fa-computer-mouse"></i></th>                                         
+                                                <th>ID&nbsp;&nbsp;<i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;</th>
+                                                <th>First Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
+                                                <th>Middle Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
+                                                <th>Last Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
+                                                <th>Birth Date&nbsp;&nbsp;<i class="fa-solid fa-cake-candles"></i>&nbsp;&nbsp;</th>
+                                                <th>Sex&nbsp;&nbsp;<i class="fa-solid fa-venus-mars"></i>&nbsp;&nbsp;</th>
+                                                <th>School&nbsp;&nbsp;<i class="fa-solid fa-school"></i>&nbsp;&nbsp;</th>
+                                                <th>Address&nbsp;&nbsp;<i class="fa-solid fa-address-book"></i>&nbsp;&nbsp;</th>
+                                                <th>Actions&nbsp;&nbsp;<i class="fa-solid fa-computer-mouse"></i>&nbsp;&nbsp;</th>                                         
                                             </tr>
                                         </thead>
                                         <tbody>
