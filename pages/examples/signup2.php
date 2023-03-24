@@ -90,7 +90,7 @@ input#password {
                     <div class="row" style="width: 100%;">
                         <div class="col-xs-8 p-t-5" style="width: 100%;">
                             <input type="checkbox" id="myCheckbox" name="myCheckbox" class="filled-in chk-col-pink">
-                            <label for="rememberme"><b>I ACCEPT TO THE TERMS AND CONDITIONS ON THE CREATION OF THIS ACCOUNT</b></label>
+                            <label for="myCheckbox"><b style="line-height: 18px;">I ACCEPT TO THE TERMS AND CONDITIONS FOR THE CREATION OF THIS ACCOUNT.</b></label>
                         </div>
                         <!-- <div class="col-xs-4">
                             <button class="btn btn-block bg-pink waves-effect" type="submit" name="submit">ENTER</button>
