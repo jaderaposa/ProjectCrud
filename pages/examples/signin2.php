@@ -43,6 +43,15 @@
     border: 2px solid #333;
     backdrop-filter: blur(5px);
 }
+
+.col-xs-6 p b a:hover {
+    color: red;
+}
+
+.col-xs-6.align-right a:hover {
+    color: red;
+}
+
 </style>
 
 <body class="login-page">
@@ -83,7 +92,7 @@
                     </div>
                     <div class="row m-t-15 m-b--20">
                         <div class="col-xs-6">
-                            <p><b>No Account Yet?<br>Click&nbsp;<a href="signup2.php" style="text-decoration-line: underline;font-weight: bolder; color: red;">Here</a>&nbsp;To Register</b></p>
+                            <p><b>No Account Yet?<br>Click&nbsp;<a href="signup2.php" style="font-weight: bolder;">Here</a>&nbsp;To Register</b></p>
                         </div>
                         <div class="col-xs-6 align-right">
                             <a href="forgot-password.html"><b>Forgot Your Password?</b></a>
