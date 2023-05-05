@@ -890,13 +890,10 @@ th.sorting_asc {
                                         <thead>
                                             <tr>
                                                 <th>ID&nbsp;&nbsp;<i class="fa-solid fa-id-card"></i>&nbsp;&nbsp;</th>
-                                                <th>First Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
-                                                <th>Middle Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
-                                                <th>Last Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
-                                                <th>Birth Date&nbsp;&nbsp;<i class="fa-solid fa-cake-candles"></i>&nbsp;&nbsp;</th>
-                                                <th>Sex&nbsp;&nbsp;<i class="fa-solid fa-venus-mars"></i>&nbsp;&nbsp;</th>
-                                                <th>School&nbsp;&nbsp;<i class="fa-solid fa-school"></i>&nbsp;&nbsp;</th>
-                                                <th>Address&nbsp;&nbsp;<i class="fa-solid fa-address-book"></i>&nbsp;&nbsp;</th>
+                                                <th>Full Name&nbsp;&nbsp;<i class="fa-solid fa-person"></i>&nbsp;&nbsp;</th>
+                                                <th>Pronoun&nbsp;&nbsp;<i class="fa-solid fa-venus-mars"></i>&nbsp;&nbsp;</th>
+                                                <th>Phone No.&nbsp;&nbsp;<i class="fa-solid fa-address-book"></i>&nbsp;&nbsp;</th>
+                                                <th>Address&nbsp;&nbsp;<i class="fa-solid fa-map-location-dot"></i></i>&nbsp;&nbsp;</th>
                                                 <th>Actions&nbsp;&nbsp;<i class="fa-solid fa-computer-mouse"></i>&nbsp;&nbsp;</th>                                         
                                             </tr>
                                         </thead>
