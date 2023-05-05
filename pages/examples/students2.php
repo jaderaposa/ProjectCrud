@@ -61,7 +61,7 @@
 <head>
     <meta charset="UTF-8">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-    <title>Data Table | Jade BootStrap Based - Materialization</title>
+    <title>Data Table | OGCS </title>
     <!-- Favicon-->
     <link rel="icon" href="../../xbox.png" type="image/x-icon">
 
@@ -142,7 +142,7 @@ th.sorting_asc {
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand jaded" href="../../index.html">Jade BootStrap Based - Materialization</a>
+                <a class="navbar-brand jaded" href="../../index.html">Online Guidance and Counseling System</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -336,7 +336,7 @@ th.sorting_asc {
                         </ul>
                     </li>
                     <!-- #END# Tasks -->
-                    <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li>
+                    <!-- <li class="pull-right"><a href="javascript:void(0);" class="js-right-sidebar" data-close="true"><i class="material-icons">more_vert</i></a></li> -->
                 </ul>
             </div>
         </div>
@@ -540,7 +540,7 @@ th.sorting_asc {
                     </li> -->
                     <li class="active">
                         <a href="students2.php" class="menu-toggle">
-                            <span>Student Data Table</span>
+                            <span>Patient List</span>
                         </a> <!--
                         <ul class="ml-menu">
                             <li>
@@ -717,10 +717,9 @@ th.sorting_asc {
                 </div>
             </div> -->
             <!-- #Footer -->
-        </aside>
         <!-- #END# Left Sidebar -->
         <!-- Right Sidebar -->
-        <aside id="rightsidebar" class="right-sidebar">
+        <!-- <aside id="rightsidebar" class="right-sidebar">
             <ul class="nav nav-tabs tab-nav-right" role="tablist">
                 <li role="presentation" class="active"><a href="#skins" data-toggle="tab">SKINS</a></li>
                 <li role="presentation"><a href="#settings" data-toggle="tab">SETTINGS</a></li>
@@ -860,7 +859,7 @@ th.sorting_asc {
                     </div>
                 </div>
             </div>
-        </aside>
+        </aside> -->
         <!-- #END# Right Sidebar -->
     </section>
 
@@ -877,7 +876,7 @@ th.sorting_asc {
                     <div class="card">
                         <div class="header" style="display: flex; justify-content:space-between;padding: 15px;">
                             <h2>
-                                STUDENT LIST
+                                PATIENT LIST
                             </h2>
                             <!-- <ul class="header-dropdown m-r--5"> -->
                             <section>
@@ -921,9 +920,9 @@ th.sorting_asc {
                                                 <td><?php echo $row['school']; ?></td>
                                                 <td><?php echo $row['address']; ?></td>
                                                 <td class="jaded" style="text-align: center;">
-                                                    <a class='btn btn-primary' href='viewdisplay.php?id=<?php echo $row['id']; ?>'>View&nbsp;&nbsp;<i class="fa fa-search"  aria-hidden="true"></i></a>
-                                                    <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'>Edit&nbsp;&nbsp;<i class="fa fa-pencil" aria-hidden="true"></i></a>
-                                                    <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal">Delete&nbsp;&nbsp;<i class="fa fa-trash" aria-hidden="true"></i></button>
+                                                    <a class='btn btn-primary' href='viewdisplay.php?id=<?php echo $row['id']; ?>'><i class="fa fa-search"  aria-hidden="true"></i></a>
+                                                    <a class='btn btn-success' href='edit.php?id=<?php echo $row['id']; ?>'><i class="fa fa-pencil" aria-hidden="true"></i></a>
+                                                    <button type="button" class="btn btn-danger" data-target="#deleteModal<?php echo $row['id']; ?>" data-toggle="modal"><i class="fa fa-trash" aria-hidden="true"></i></button>
                                                 </td>
                                             <?php include "modal.php"; ?>    
                                             </tr>
@@ -945,7 +944,7 @@ th.sorting_asc {
                     <div class="card">
                         <div class="header">
                             <h2 style="display: inline-block;margin: 15px;">
-                                EXPORTABLE LIST
+                                EXPORTABLES
                             </h2>                   
                         </div>
                         <div class="body">
