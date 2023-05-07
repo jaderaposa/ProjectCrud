@@ -874,7 +874,7 @@
                                     </div>
                                     <label for="image">Image</label>
                                     <div class="form-group">
-                                        <input type="file"  class="form-control" name="image" id="image" required>
+                                        <input type="file"  class="form-control" name="image" id="image">
                                     </div>
                                     <br>                         
                                     <button style="margin"class="btn btn-block bg-pink waves-effect" type="submit" name="submit_form_get">Create</button>

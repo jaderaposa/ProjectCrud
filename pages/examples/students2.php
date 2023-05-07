@@ -15,7 +15,7 @@
               
               setTimeout(function() {
                 document.getElementById("dialogBox").remove();
-              }, 3500);
+              }, 3500); 
             </script>';
     
       

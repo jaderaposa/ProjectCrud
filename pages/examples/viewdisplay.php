@@ -808,7 +808,7 @@
                                 $student = mysqli_fetch_array($query_run);
                                 ?>
                             <div class="image-area">
-                                <img src="../../images/<?php echo $student['image'];?>" width="180" height="200" alt="profile" />
+                            <img src="../../images/<?php echo ($student['image'] != null) ? $student['image'] : 'blank.png'; ?>" width="200" height="200" alt="profile" />
 
                                 <?php   
                                 }       
@@ -933,7 +933,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="../../images/<?php echo $student['image'];?>" width="" height="50"/>
+                                                        <img src="../../images/<?php echo ($student['image'] != null) ? $student['image'] : 'blank.png'; ?>" width="" height="50"/>
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -989,7 +989,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="../../images/<?php echo $student['image'];?>" width="" height="50"/>
+                                                        <img src="../../images/<?php echo ($student['image'] != null) ? $student['image'] : 'blank.png'; ?>" width="" height="50"/>
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
@@ -1045,7 +1045,7 @@
                                                 <div class="media">
                                                     <div class="media-left">
                                                         <a href="#">
-                                                            <img src="../../images/<?php echo $student['image'];?>" height="50" />
+                                                        <img src="../../images/<?php echo ($student['image'] != null) ? $student['image'] : 'blank.png'; ?>" height="50" />
                                                         </a>
                                                     </div>
                                                     <div class="media-body">
